@@ -2,39 +2,23 @@
 
 ## Current State
 
-- **V2 code complete** — diff-based sync, multi-week scraping, per-agenda cron scripts
-- **Needs validation** — run test_week_nav.py to confirm week navigation, then test end-to-end on VPS
+- **V2 LIVE on VPS** — diff-based sync, multi-week scraping, systemd timers running
 - **Teacher provisioning**: Complete — 56 active M365 accounts
 - **VIP matching logic**: Migrated to UI app (`vip_planner.py`) — no longer in this project
 
-## V2 — Production Sync
+## V2 — Production Sync (LIVE)
 
 Spec: see Hub `.planning/scheduling-v2-spec.md` for full architecture.
 
-### Implementation status
-
-| Change | Purpose | Status |
-|--------|---------|--------|
-| Week navigation discovery | `test_week_nav.py` — confirm SparkSource week nav | Done (needs manual test) |
-| Add `--weeks N` to scraper | Multi-week VIP scraping (3 weeks ahead) | Done |
-| Create `diff_sync.py` | Diff engine: compare old/new, only sync changes | Done |
-| Refactor `sync_calendars.py` | Use diff engine + `--agenda` for method classes | Done |
-| Refactor `sync_private_calendars.py` | Use diff engine + `--agenda` for VIP events | Done |
-| Create `sync_method.sh` | Wrapper: scrape + diff-sync one method school | Done |
-| Create `sync_vip.sh` | Wrapper: scrape + diff-sync all 3 VIP agendas | Done |
-| Update VPS timers | Systemd timers for method (weekly) vs VIP (every 2h) | Ready (see below) |
-
-### VPS systemd timers (to install)
-
-Using systemd timers instead of cron — better logging (`journalctl`), status tracking (`systemctl status`), auto-catch-up on missed runs.
+### Systemd timers (active on VPS)
 
 ```
-scheduling-method-sfs.timer  → Thursday 18:00 UTC (20:00 CET) — after SFS new week opens
-scheduling-method-esa.timer  → Friday 18:00 UTC (20:00 CET) — after ESA new week opens
+scheduling-method-sfs.timer  → Thursday 11:00 UTC (12:00 CET) — after SFS new week opens
+scheduling-method-esa.timer  → Friday 11:00 UTC (12:00 CET) — after ESA new week opens
 scheduling-vip.timer         → Mon-Sat every 2h 06:00-18:00 UTC (07:00-19:00 CET)
 ```
 
-Unit files: Hub `.planning/systemd/`. Install: `sudo bash install-timers.sh`
+Unit files: Hub `.planning/systemd/`. Installed to `/etc/systemd/system/` on VPS.
 
 ```bash
 systemctl list-timers scheduling-*          # See all jobs + next/last run
@@ -43,15 +27,14 @@ journalctl -u scheduling-vip --since today  # Read logs
 sudo systemctl start scheduling-vip         # Manual trigger
 ```
 
-### Validation checklist
+### Validation results (Feb 27, 2026)
 
-- [ ] `git push` to GitHub, `git pull` on VPS
-- [ ] Run `sync_method.sh sfs_lausanne` on VPS (first run = full sync)
-- [ ] Run again — should show 0 changes (diff empty)
-- [ ] Run `sync_vip.sh` on VPS — first run creates state for all 3 agendas
-- [ ] Wait, run again — should only show real changes
-- [ ] Install systemd timers on VPS after validation
-- [ ] Remove `scripts/test_week_nav.py` after validation complete
+- [x] Method sync first run: 20 teachers, 68 events, 0 failures
+- [x] Method sync second run: `Added: 0, Removed: 0, Changed: 0, Unchanged: 68`
+- [x] VIP sync first run: 380 events across 3 agendas (3 weeks each)
+- [x] Systemd timers installed and active
+- [ ] Monitor first automated runs
+- [ ] Remove `scripts/test_week_nav.py` after confidence established
 
 ### Key design decisions
 

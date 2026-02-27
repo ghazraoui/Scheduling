@@ -41,7 +41,7 @@ Local PC (develop)  →  GitHub (push)  →  VPS (git pull + run)
 | **Runtime** | Python 3.13 venv at `.venv/`, Playwright + Chromium headless |
 | **Credentials** | `.env` on VPS only (gitignored) — SparkSource + Azure AD |
 | **Logs** | `journalctl -u scheduling-*` (systemd journal) |
-| **Timers** | Systemd timers: method-sfs (Thu), method-esa (Fri), vip (every 2h Mon-Sat) |
+| **Timers** | Systemd: method-sfs (Thu 12:00 CET), method-esa (Fri 12:00 CET), vip (every 2h Mon-Sat 07-19 CET) |
 | **Scripts** | `sync_method.sh`, `sync_vip.sh` (v2), `run_full_sync.sh` (v1 fallback) |
 | **Timer management** | `systemctl list-timers scheduling-*`, `systemctl status scheduling-vip` |
 
