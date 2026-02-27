@@ -1,0 +1,638 @@
+[
+  {
+    "firstname": "Asita",
+    "lastname": "Aryan",
+    "phone": "079 672 69 55",
+    "email": null,
+    "tags": [
+      "ESA"
+    ],
+    "section": "lausanne",
+    "source_line": "Asita Aryan\t\t\t079 672 69 55\t\t\t\t\t\tESA"
+  },
+  {
+    "firstname": "Kerstin",
+    "lastname": "Weinmann",
+    "phone": "078 675 71 57",
+    "email": null,
+    "tags": [
+      "ESA"
+    ],
+    "section": "lausanne",
+    "source_line": "Kerstin Weinmann\t\t078 675 71 57\t\t\t\t\t\tESA"
+  },
+  {
+    "firstname": "Kerstin",
+    "lastname": "Wells",
+    "phone": "079 936 99 88",
+    "email": null,
+    "tags": [
+      "ESA"
+    ],
+    "section": "lausanne",
+    "source_line": "Kerstin Wells\t\t\t079 936 99 88\t\t\t\t\t\tESA"
+  },
+  {
+    "firstname": "Ursula",
+    "lastname": "Schweiger",
+    "phone": "+43 664 820 27 97",
+    "email": null,
+    "tags": [
+      "ESA"
+    ],
+    "section": "lausanne",
+    "source_line": "Ursula Schweiger\t\t+43 664 820 27 97\t\t\t\t\tESA"
+  },
+  {
+    "firstname": "Yannick",
+    "lastname": "Bircher",
+    "phone": "078 775 23 71",
+    "email": null,
+    "tags": [
+      "ESA"
+    ],
+    "section": "lausanne",
+    "source_line": "Yannick Bircher\t\t078 775 23 71\t\t\t\t\t\tESA"
+  },
+  {
+    "firstname": "Samuel",
+    "lastname": "Preuss",
+    "phone": "076 814 72 36",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Samuel Preuss\t\t076 814 72 36\t\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Petra",
+    "lastname": "Weber",
+    "phone": "076 433 92 49",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Petra Weber\t\t\t076 433 92 49\t\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Christopher",
+    "lastname": "Drapatz",
+    "phone": "078 749 05 72",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Christopher Drapatz\t\t078 749 05 72\t\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Sandra",
+    "lastname": "Ait",
+    "phone": "079 481 25 38",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Sandra Ait\t\t\t079 481 25 38\t\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Johanna",
+    "lastname": "Paczulla",
+    "phone": "+49 1573 8932584",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Johanna Paczulla\t\t+49 1573 8932584\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Nadja",
+    "lastname": "Godzina",
+    "phone": "076 762 51 94",
+    "email": null,
+    "tags": [
+      "ESA",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Nadja Godzina\t\t076 762 51 94\t\t\t\t\t\tESA + Junior"
+  },
+  {
+    "firstname": "Claire",
+    "lastname": "Bourban",
+    "phone": "079 532 75 12",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Claire Bourban\t\t079 532 75 12\t\t\t\t\t\tSFS"
+  },
+  {
+    "firstname": "Nicolas",
+    "lastname": "Petrovic",
+    "phone": "076 366 65 09",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Nicolas Petrovic\t\t076 366 65 09\t\t\t\t            \tSFS"
+  },
+  {
+    "firstname": "Karine",
+    "lastname": "Blatter",
+    "phone": "077 400 03 32",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Karine Blatter\t\t\t077 400 03 32\t\t\t\t            \tSFS"
+  },
+  {
+    "firstname": "Naïma",
+    "lastname": "Rey",
+    "phone": "078 786 04 02",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Naïma Rey\t\t\t078 786 04 02\t\t\t\t            \tSFS"
+  },
+  {
+    "firstname": "Juliette",
+    "lastname": "Koche",
+    "phone": "+33 6 78 07 27 10",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Juliette Koche\t\t\t+33 6 78 07 27 10 \t\t\t            \tSFS"
+  },
+  {
+    "firstname": "Mélanie",
+    "lastname": "Quintin",
+    "phone": "+33 6 81 57 44 20",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Mélanie Quentin\t\t+33 6 81 57 44 20\t\t\t            \tSFS"
+  },
+  {
+    "firstname": "Naciba",
+    "lastname": "Hermez",
+    "phone": "+33 6 20 40 78 04",
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "Naciba Hermez\t\t+33 6 20 40 78 04\t\t\t\t\tSFS"
+  },
+  {
+    "firstname": "Joséphine",
+    "lastname": "Struba",
+    "phone": "076 505 08 72",
+    "email": null,
+    "tags": [
+      "SFS",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Joséphine Struba\t\t076 505 08 72\t\t\t\t\t\tSFS + Junior"
+  },
+  {
+    "firstname": "Paul",
+    "lastname": "Crettex",
+    "phone": "079 920 89 03",
+    "email": null,
+    "tags": [
+      "SFS",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Paul Cretex\t\t\t079 920 89 03\t\t\t\t\t\tSFS + Junior"
+  },
+  {
+    "firstname": "Sophia",
+    "lastname": "Dachraoui",
+    "phone": "079 199 42 85",
+    "email": null,
+    "tags": [
+      "SFS",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Sophia Dachraoui\t\t079 199 42 85\t\t\t\t\t\tSFS + Junior"
+  },
+  {
+    "firstname": "Ina",
+    "lastname": "Tosca",
+    "phone": "079 748 77 46",
+    "email": null,
+    "tags": [
+      "SFS",
+      "Fide Examinatrice"
+    ],
+    "section": "lausanne",
+    "source_line": "Ina Tosca\t\t\t079 748 77 46\t\t\t\t     SFS + Fide Examinatrice"
+  },
+  {
+    "firstname": "Muriel",
+    "lastname": "Stern",
+    "phone": "078 768 06 44",
+    "email": null,
+    "tags": [
+      "SFS",
+      "Fide Examinatrice"
+    ],
+    "section": "lausanne",
+    "source_line": "Muriel Stern\t\t\t078 768 06 44\t\t\t\t     SFS + Fide Examinatrice"
+  },
+  {
+    "firstname": "Ron",
+    "lastname": "Bulwith",
+    "phone": "079 107 05 76",
+    "email": null,
+    "tags": [
+      "WSE"
+    ],
+    "section": "lausanne",
+    "source_line": "Ron Bulwith\t\t\t079 107 05 76\t\t\t\t\t\tWSE"
+  },
+  {
+    "firstname": "Naasira",
+    "lastname": "Khan",
+    "phone": "079 884 60 92",
+    "email": null,
+    "tags": [
+      "WSE"
+    ],
+    "section": "lausanne",
+    "source_line": "Naasira Khan\t\t\t079 884 60 92\t\t\t\t\t\tWSE"
+  },
+  {
+    "firstname": "Laura",
+    "lastname": "Kennedy",
+    "phone": "076 649 89 54",
+    "email": null,
+    "tags": [
+      "WSE"
+    ],
+    "section": "lausanne",
+    "source_line": "Laura Kennedy\t\t076 649 89 54\t\t\t\t\t\tWSE"
+  },
+  {
+    "firstname": "Karen",
+    "lastname": "Parrone",
+    "phone": "021 922 57 69",
+    "email": null,
+    "tags": [
+      "WSE"
+    ],
+    "section": "lausanne",
+    "source_line": "Karen Parrone\t\t\t021 922 57 69\t\t079 277 31 70\t\t\tWSE"
+  },
+  {
+    "firstname": "Derna",
+    "lastname": "Lambert-Schwab",
+    "phone": "076 334 30 97",
+    "email": null,
+    "tags": [
+      "WSE"
+    ],
+    "section": "lausanne",
+    "source_line": "Derna Lambert-Schwab\t076 334 30 97\t\t\t\t\t\tWSE"
+  },
+  {
+    "firstname": "Emily",
+    "lastname": "Taylor",
+    "phone": "076 497 45 24",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Emily Taylor\t\t\t076 497 45 24\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Maria",
+    "lastname": "Tinel",
+    "phone": "076 427 19 71",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Maria Tinel\t\t\t076 427 19 71\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Melissa",
+    "lastname": "Gherardi",
+    "phone": "076 704 97 10",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Melissa Gherardi\t\t076 704 97 10 \t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Suzy",
+    "lastname": "Emmerton",
+    "phone": "079 523 34 47",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Suzy Emmerton\t\t079 523 34 47\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Jamie",
+    "lastname": "Ritzo",
+    "phone": "076 749 01 63",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Jamie Ritzo \t\t\t076 749 01 63\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Madeline",
+    "lastname": "Brown",
+    "phone": "078 346 80 85",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Madeline Brown\t\t078 346 80 85\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Claire",
+    "lastname": "Prendergast",
+    "phone": "076 518 10 90",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Claire Prendergast\t\t076 518 10 90\t\t\t\t\t\tWSE + Junior"
+  },
+  {
+    "firstname": "Kristen",
+    "lastname": "Keiser",
+    "phone": "079 425 51 58",
+    "email": null,
+    "tags": [
+      "WSE",
+      "Junior"
+    ],
+    "section": "lausanne",
+    "source_line": "Kristen Keiser                         079 425 51 58                                                           WSE Junior"
+  },
+  {
+    "firstname": "Simone",
+    "lastname": "Tietz",
+    "phone": "+264 81 222 14 06",
+    "email": "monatietz@gmail.com",
+    "tags": [
+      "ESA"
+    ],
+    "section": "online",
+    "source_line": "Simone Tietz\t\t\t+264 81 222 14 06 monatietz@gmail.com\t\t            ESA"
+  },
+  {
+    "firstname": "Judith",
+    "lastname": "Diekmann",
+    "phone": "+264 81 815 8682",
+    "email": "thediekmannfamily@gmail.com",
+    "tags": [
+      "ESA"
+    ],
+    "section": "online",
+    "source_line": "Judith Diekmann\t            +264 81 815 8682 thediekmannfamily@gmail.com\t\tESA"
+  },
+  {
+    "firstname": "Judit",
+    "lastname": "Peszlen",
+    "phone": "+34 6 74 48 95 39",
+    "email": "peszlenj@gmail.com",
+    "tags": [
+      "ESA"
+    ],
+    "section": "online",
+    "source_line": "Judit Peszlen\t\t\t+34 6 74 48 95 39 peszlenj@gmail.com\t\t\tESA"
+  },
+  {
+    "firstname": "Korinna",
+    "lastname": "Aring",
+    "phone": "+264 81 310 48 60",
+    "email": "korinna.aring@gmail.com",
+    "tags": [
+      "ESA"
+    ],
+    "section": "online",
+    "source_line": "Korinna Aring\t\t\t+264 81 310 48 60 korinna.aring@gmail.com\t\tESA"
+  },
+  {
+    "firstname": "Doreen",
+    "lastname": "Liepert",
+    "phone": "+33 6 84 27 35 49",
+    "email": "doreen_liepert@yahoo.de",
+    "tags": [
+      "ESA"
+    ],
+    "section": "online",
+    "source_line": "Doreen Liepert\t\t+33 6 84 27 35 49 doreen_liepert@yahoo.de\t\tESA"
+  },
+  {
+    "firstname": "Sophie",
+    "lastname": "Pare",
+    "phone": "+33 6 09 26 61 99",
+    "email": "sophiepare67@orange.fr",
+    "tags": [
+      "ESA",
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Sophie Pare \t\t\t+33 6 09 26 61 99 sophiepare67@orange.fr\t\t    ESA/SFS"
+  },
+  {
+    "firstname": "Marilène",
+    "lastname": "Lemoine",
+    "phone": "+961 81 963 149",
+    "email": "marilene.lemoine@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Marilène Lemoine\t\t+961 81 963 149 marilene.lemoine@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Marion",
+    "lastname": "Degrace",
+    "phone": "+33 6 76 64 98 20",
+    "email": "degrace.marion@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Marion Degrace\t\t+33 6 76 64 98 20 degrace.marion@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Charlène",
+    "lastname": "Chaouche",
+    "phone": "+33 6 01 23 28 18",
+    "email": "sofrench.charlene@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Charlène Chaouch\t\t+33 6 01 23 28 18 sofrench.charlene@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Sofiane",
+    "lastname": "Chaouche",
+    "phone": "+33 6 59 81 74 80",
+    "email": "sofiane@sofrench.online",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Sofian Chaouch\t             +33 6 59 81 74 80 sofiane@sofrench.online\t\tSFS"
+  },
+  {
+    "firstname": "Emilie",
+    "lastname": "Dupierris",
+    "phone": "+33 6 11 34 56 01",
+    "email": "emiliedupierris@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Emilie Dupierries\t\t+33 6 11 34 56 01 emiliedupierris@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Nadjet",
+    "lastname": "Khentache",
+    "phone": "+33 6 25 09 48 92",
+    "email": "nadjetkhentache@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Nadjet Khentache\t\t+33 6 25 09 48 92 nadjetkhentache@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Kenza",
+    "lastname": "Aguilar",
+    "phone": "+33 6 98 9015 01",
+    "email": "kenza.aguilar@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Kenza Aguilar \t\t\t +33 6 98 9015 01 kenza.aguilar@gmail.com \t\tSFS"
+  },
+  {
+    "firstname": "Carole",
+    "lastname": "Flanquart",
+    "phone": "+33 6 64 00 16 18",
+    "email": "cmondauphin@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Carole Flanquart\t\t+33 6 64 00 16 18 cmondauphin@gmail.com\t\tSFS"
+  },
+  {
+    "firstname": "Caroline",
+    "lastname": "Hestin",
+    "phone": "+44 7 39 9 82 21 73",
+    "email": "carohestin@yahoo.fr",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Caroline Hestin \t\t+44 7 39 9 82 21 73 carohestin@yahoo.fr\t\t\tSFS"
+  },
+  {
+    "firstname": "Morgan",
+    "lastname": "Dalin",
+    "phone": "+817089070288",
+    "email": "morgan.dalin@gmail.com",
+    "tags": [
+      "SFS"
+    ],
+    "section": "online",
+    "source_line": "Morgan Dalin \t\t\t+817089070288 morgan.dalin@gmail.com\t\t\tSFS"
+  },
+  {
+    "firstname": "Jacqueline",
+    "lastname": "Anderson",
+    "phone": "+30 693 024 83 75",
+    "email": "jacquel.anderson7@gmail.com",
+    "tags": [
+      "WSE"
+    ],
+    "section": "online",
+    "source_line": "Jacqueline Anderson\t\t+30 693 024 83 75 jacquel.anderson7@gmail.com\t\tWSE"
+  },
+  {
+    "firstname": "Sharon",
+    "lastname": "Gary",
+    "phone": "+90 530 522 04 17",
+    "email": "sharonmelissagary@hotmail.com",
+    "tags": [
+      "WSE"
+    ],
+    "section": "online",
+    "source_line": "Sharon Gary\t\t\t+90 530 522 04 17 sharonmelissagary@hotmail.com\tWSE"
+  },
+  {
+    "firstname": "Paul",
+    "lastname": "McCaffrey",
+    "phone": "+385 99 745 5012",
+    "email": "pauldmccaffrey@yahoo.co.uk",
+    "tags": [
+      "WSE"
+    ],
+    "section": "online",
+    "source_line": "Paul McCaffrey \t\t+385 99 745 5012 pauldmccaffrey@yahoo.co.uk \t\tWSE"
+  },
+  {
+    "firstname": "Rachel",
+    "lastname": "Bergin",
+    "phone": null,
+    "email": null,
+    "tags": [
+      "SFS"
+    ],
+    "section": "lausanne",
+    "source_line": "(added manually - new SFS teacher found in SparkSource)"
+  }
+]

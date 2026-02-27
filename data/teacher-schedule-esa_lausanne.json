@@ -1,0 +1,307 @@
+{
+  "Judith DIEKMANN": [
+    {
+      "day": "Monday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "day": "Monday",
+      "start": "12:30",
+      "end": "14:30"
+    },
+    {
+      "day": "Monday",
+      "start": "18:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "11:30",
+      "end": "12:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "18:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "18:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "18:30",
+      "end": "20:30"
+    }
+  ],
+  "Petra WEBER": [
+    {
+      "day": "Monday",
+      "start": "09:30",
+      "end": "12:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "09:30",
+      "end": "12:30"
+    },
+    {
+      "day": "Friday",
+      "start": "09:15",
+      "end": "12:15"
+    }
+  ],
+  "Judit PESZLEN": [
+    {
+      "day": "Monday",
+      "start": "10:00",
+      "end": "11:00"
+    },
+    {
+      "day": "Tuesday",
+      "start": "16:00",
+      "end": "18:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "11:30",
+      "end": "14:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Friday",
+      "start": "13:00",
+      "end": "14:00"
+    },
+    {
+      "day": "Friday",
+      "start": "16:30",
+      "end": "19:30"
+    }
+  ],
+  "Kerstin ESA WEINMANN MAIN": [
+    {
+      "day": "Monday",
+      "start": "12:00",
+      "end": "15:00"
+    },
+    {
+      "day": "Tuesday",
+      "start": "16:00",
+      "end": "19:00"
+    }
+  ],
+  "Nadja GODZINA MAIN": [
+    {
+      "day": "Monday",
+      "start": "12:00",
+      "end": "15:00"
+    },
+    {
+      "day": "Monday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "16:30",
+      "end": "20:30"
+    }
+  ],
+  "Korinna ARING": [
+    {
+      "day": "Monday",
+      "start": "14:30",
+      "end": "15:30"
+    },
+    {
+      "day": "Monday",
+      "start": "16:30",
+      "end": "18:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:00",
+      "end": "19:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "11:30",
+      "end": "14:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:00",
+      "end": "19:00"
+    },
+    {
+      "day": "Friday",
+      "start": "14:00",
+      "end": "15:00"
+    }
+  ],
+  "Simone TIETZ CR": [
+    {
+      "day": "Monday",
+      "start": "17:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Tuesday",
+      "start": "09:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "17:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Friday",
+      "start": "11:00",
+      "end": "13:00"
+    }
+  ],
+  "Samuel PREUSS": [
+    {
+      "day": "Monday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "09:30",
+      "end": "11:30"
+    }
+  ],
+  "Kerstin ESA WELLS MAIN": [
+    {
+      "day": "Tuesday",
+      "start": "09:30",
+      "end": "13:30"
+    }
+  ],
+  "Yannick BIRCHER MAIN": [
+    {
+      "day": "Tuesday",
+      "start": "11:30",
+      "end": "14:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "10:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Friday",
+      "start": "11:30",
+      "end": "14:30"
+    }
+  ],
+  "Christopher DRAPATZ": [
+    {
+      "day": "Tuesday",
+      "start": "17:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "13:30",
+      "end": "15:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:00",
+      "end": "20:00"
+    }
+  ],
+  "Johanna PACZULLA": [
+    {
+      "day": "Tuesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "12:00",
+      "end": "14:00"
+    },
+    {
+      "day": "Friday",
+      "start": "12:15",
+      "end": "14:15"
+    },
+    {
+      "day": "Friday",
+      "start": "16:30",
+      "end": "19:30"
+    }
+  ],
+  "Asita ARYAN MAIN": [
+    {
+      "day": "Wednesday",
+      "start": "17:00",
+      "end": "18:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "16:00",
+      "end": "19:00"
+    }
+  ],
+  "Sandra AIT MAIN": [
+    {
+      "day": "Thursday",
+      "start": "12:00",
+      "end": "14:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Friday",
+      "start": "15:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Saturday",
+      "start": "09:00",
+      "end": "13:00"
+    }
+  ],
+  "Sophie PARE": [
+    {
+      "day": "Thursday",
+      "start": "17:00",
+      "end": "20:00"
+    }
+  ]
+}

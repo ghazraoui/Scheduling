@@ -1,0 +1,387 @@
+{
+  "Sofiane CHAOUCHE": [
+    {
+      "day": "Monday",
+      "start": "09:00",
+      "end": "13:00"
+    },
+    {
+      "day": "Friday",
+      "start": "09:30",
+      "end": "13:30"
+    }
+  ],
+  "Rachel BERGIN": [
+    {
+      "day": "Monday",
+      "start": "09:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "11:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Friday",
+      "start": "09:30",
+      "end": "12:30"
+    }
+  ],
+  "Naciba HERMEZ": [
+    {
+      "day": "Monday",
+      "start": "09:30",
+      "end": "11:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "12:00",
+      "end": "15:00"
+    },
+    {
+      "day": "Tuesday",
+      "start": "17:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "09:30",
+      "end": "11:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Friday",
+      "start": "17:00",
+      "end": "20:00"
+    }
+  ],
+  "Morgan DALIN": [
+    {
+      "day": "Monday",
+      "start": "12:30",
+      "end": "15:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "15:30",
+      "end": "18:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "20:30"
+    }
+  ],
+  "Sophie PARE": [
+    {
+      "day": "Monday",
+      "start": "12:30",
+      "end": "15:30"
+    }
+  ],
+  "Karine BLATTER": [
+    {
+      "day": "Monday",
+      "start": "13:00",
+      "end": "15:00"
+    },
+    {
+      "day": "Monday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "10:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "17:30",
+      "end": "18:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "19:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "13:00",
+      "end": "14:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "18:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "19:30",
+      "end": "20:30"
+    }
+  ],
+  "Mélanie QUINTIN": [
+    {
+      "day": "Monday",
+      "start": "13:00",
+      "end": "16:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "14:30",
+      "end": "16:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:00",
+      "end": "18:00"
+    }
+  ],
+  "Claire BOURBAN": [
+    {
+      "day": "Monday",
+      "start": "15:30",
+      "end": "17:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "14:30",
+      "end": "16:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "17:00",
+      "end": "19:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "10:30",
+      "end": "12:30"
+    }
+  ],
+  "Sophia DACHRAOUI": [
+    {
+      "day": "Monday",
+      "start": "16:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "09:30",
+      "end": "12:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "09:30",
+      "end": "12:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "10:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:30",
+      "end": "20:30"
+    }
+  ],
+  "Ina TOSCA": [
+    {
+      "day": "Monday",
+      "start": "17:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Saturday",
+      "start": "09:00",
+      "end": "13:00"
+    }
+  ],
+  "Carole FLANQUART": [
+    {
+      "day": "Monday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    }
+  ],
+  "Naïma REY": [
+    {
+      "day": "Monday",
+      "start": "19:30",
+      "end": "20:30"
+    }
+  ],
+  "Juliette KOCHE": [
+    {
+      "day": "Tuesday",
+      "start": "10:30",
+      "end": "13:30"
+    },
+    {
+      "day": "Tuesday",
+      "start": "15:00",
+      "end": "18:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "12:30",
+      "end": "15:30"
+    }
+  ],
+  "Emilie DUPIERRIS": [
+    {
+      "day": "Tuesday",
+      "start": "17:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "12:30",
+      "end": "15:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    }
+  ],
+  "Nadjet KHENTACHE": [
+    {
+      "day": "Wednesday",
+      "start": "09:30",
+      "end": "10:30"
+    },
+    {
+      "day": "Wednesday",
+      "start": "12:00",
+      "end": "14:00"
+    },
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "19:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "day": "Saturday",
+      "start": "09:00",
+      "end": "13:00"
+    }
+  ],
+  "Kenza AGUILAR": [
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Saturday",
+      "start": "09:30",
+      "end": "13:30"
+    }
+  ],
+  "Charlène CHAOUCHE": [
+    {
+      "day": "Wednesday",
+      "start": "17:30",
+      "end": "20:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "12:30",
+      "end": "15:30"
+    }
+  ],
+  "Nicolas PETROVIC": [
+    {
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "12:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "14:30",
+      "end": "16:30"
+    },
+    {
+      "day": "Thursday",
+      "start": "17:00",
+      "end": "18:00"
+    },
+    {
+      "day": "Thursday",
+      "start": "19:00",
+      "end": "20:00"
+    },
+    {
+      "day": "Friday",
+      "start": "11:30",
+      "end": "14:30"
+    },
+    {
+      "day": "Friday",
+      "start": "15:00",
+      "end": "19:00"
+    }
+  ],
+  "Paul CRETTEX": [
+    {
+      "day": "Friday",
+      "start": "11:00",
+      "end": "14:00"
+    }
+  ],
+  "Marion DEGRACE CR": [
+    {
+      "day": "Saturday",
+      "start": "11:00",
+      "end": "13:00"
+    }
+  ]
+}
