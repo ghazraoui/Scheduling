@@ -46,7 +46,7 @@ sudo systemctl start scheduling-vip         # Manual trigger
 
 ## VPS Deployment — COMPLETE
 
-**Model**: Local PC → GitHub (`ghazraoui/Scheduling`) → VPS (`git clone` at `/opt/slg/scheduling/`)
+**Model**: Local PC (`main`) → merge to `deploy` branch → GitHub Actions webhook → VPS auto-pulls
 
 - [x] GitHub repo created and pushed
 - [x] SparkSource scraper extracted from Student Follow Up (self-contained)
@@ -85,6 +85,7 @@ sudo systemctl start scheduling-vip         # Manual trigger
 | `scripts/sync_vip.sh` | Wrapper: VIP scrape + diff sync (all 3 schools) | Done (v2) |
 | `scripts/run_full_sync.sh` | V1 full pipeline (kept as fallback) | Done (v1) |
 | `scripts/test_week_nav.py` | Week navigation discovery (temporary) | Done (remove after test) |
+| `scripts/deploy_webhook.py` | Deploy webhook listener (GitHub Actions → git pull) | Done |
 | `scripts/config.py` | Shared Graph API credentials & helpers | Done |
 | `scripts/provision_teachers.py` | Create M365 accounts + assign A1 licenses | Done |
 | `scripts/tenant_recon.py` | Query tenant info | Done |

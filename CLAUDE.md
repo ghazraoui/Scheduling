@@ -104,7 +104,11 @@ Scheduling/
 │       └── pages/
 │           ├── __init__.py
 │           └── schedule.py        # SchedulePage — weekly schedule extraction + week navigation
+├── .github/
+│   └── workflows/
+│       └── deploy.yml             # GitHub Actions: on push to deploy → webhook → VPS git pull
 ├── scripts/
+│   ├── deploy_webhook.py          # Deploy webhook listener (localhost:9000, Nginx proxied)
 │   ├── config.py                  # Azure AD credentials (from .env) + Graph API helpers
 │   ├── diff_sync.py               # V2 diff engine: compare old/new state, apply targeted changes
 │   ├── scrape_schedules.py        # Scrape SparkSource schedules (--weeks N for multi-week)
