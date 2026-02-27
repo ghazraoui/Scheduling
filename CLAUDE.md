@@ -24,13 +24,33 @@ Scheduling (this project)                                    UI App
 **GitHub repo**: `ghazraoui/Scheduling` (private)
 
 ```
-Local PC (develop)  →  GitHub (push)  →  VPS (git pull + run)
+Local PC (develop on main)  →  merge to deploy branch  →  GitHub Actions auto-SSHs into VPS + git pull
 ```
 
-- **Develop locally** — edit code with Claude on this PC
-- **Push to GitHub** — version control, single source of truth for code
-- **VPS runs the automation** — `/opt/slg/scheduling/` is a `git clone` of this repo
-- **Deploy updates** — `git pull` on VPS picks up changes (or automated via webhook)
+- **Develop locally** on `main` — edit code with Claude on this PC
+- **Push to `main`** — version control, test changes
+- **Merge `main` → `deploy`** — triggers auto-deploy via GitHub Actions
+- **GitHub Actions** SSHs into VPS, runs `git pull origin deploy`
+- **VPS** at `/opt/slg/scheduling/` tracks the `deploy` branch
+
+### Deploy workflow
+
+```bash
+# Normal deploy cycle:
+git push origin main               # push your changes
+git checkout deploy                 # switch to deploy branch
+git merge main                     # merge main into deploy
+git push origin deploy              # triggers GitHub Actions → VPS auto-pulls
+git checkout main                   # switch back to develop
+
+# Or merge from GitHub UI:
+# Create PR: main → deploy, merge it
+```
+
+**GitHub Actions workflow**: `.github/workflows/deploy.yml`
+- Trigger: push to `deploy` branch
+- Action: SSH into VPS via `appleboy/ssh-action`, `git pull origin deploy`
+- Secrets: `VPS_SSH_KEY`, `VPS_HOST`, `VPS_USER`
 
 ### VPS Details
 
@@ -47,11 +67,11 @@ Local PC (develop)  →  GitHub (push)  →  VPS (git pull + run)
 
 ### Deploying Changes
 
+Merge `main` → `deploy` and push. GitHub Actions handles the rest.
+
 ```bash
-# On VPS:
+# If dependencies changed, SSH into VPS manually:
 cd /opt/slg/scheduling
-git pull
-# If dependencies changed:
 .venv/bin/pip install -r requirements.txt
 ```
 
