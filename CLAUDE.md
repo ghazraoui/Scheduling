@@ -24,13 +24,14 @@ Scheduling (this project)                                    UI App
 **GitHub repo**: `ghazraoui/Scheduling` (private)
 
 ```
-Local PC (develop on main)  →  merge to deploy branch  →  GitHub Actions auto-SSHs into VPS + git pull
+Local PC (develop on main)  →  merge to deploy branch  →  GitHub Actions curls VPS webhook → git pull
 ```
 
 - **Develop locally** on `main` — edit code with Claude on this PC
 - **Push to `main`** — version control, test changes
 - **Merge `main` → `deploy`** — triggers auto-deploy via GitHub Actions
-- **GitHub Actions** SSHs into VPS, runs `git pull origin deploy`
+- **GitHub Actions** POSTs to VPS webhook with shared secret
+- **Webhook listener** (`scripts/deploy_webhook.py`) runs `git pull origin deploy`
 - **VPS** at `/opt/slg/scheduling/` tracks the `deploy` branch
 
 ### Deploy workflow
@@ -40,7 +41,7 @@ Local PC (develop on main)  →  merge to deploy branch  →  GitHub Actions aut
 git push origin main               # push your changes
 git checkout deploy                 # switch to deploy branch
 git merge main                     # merge main into deploy
-git push origin deploy              # triggers GitHub Actions → VPS auto-pulls
+git push origin deploy              # triggers GitHub Actions → VPS webhook → git pull
 git checkout main                   # switch back to develop
 
 # Or merge from GitHub UI:
@@ -49,8 +50,15 @@ git checkout main                   # switch back to develop
 
 **GitHub Actions workflow**: `.github/workflows/deploy.yml`
 - Trigger: push to `deploy` branch
-- Action: SSH into VPS via `appleboy/ssh-action`, `git pull origin deploy`
-- Secrets: `VPS_SSH_KEY`, `VPS_HOST`, `VPS_USER`
+- Action: POST to `https://swisslanguagegroup.cloud/webhook/deploy-scheduling`
+- Secret: `DEPLOY_WEBHOOK_SECRET` (shared between GitHub and VPS)
+
+**Webhook listener**: `scripts/deploy_webhook.py`
+- Runs on `127.0.0.1:9000`, Nginx proxies HTTPS traffic to it
+- Validates `X-Deploy-Token` header against `DEPLOY_SECRET` env var
+- Runs `git pull origin deploy` in `/opt/slg/scheduling/`
+- Systemd service: `scheduling-deploy-webhook.service`
+- Health check: `curl http://localhost:9000/health`
 
 ### VPS Details
 
