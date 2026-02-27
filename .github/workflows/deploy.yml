@@ -9,13 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            cd /opt/slg/scheduling
-            git pull origin deploy
-            echo "Deploy complete: $(git log --oneline -1)"
+      - name: Trigger deploy webhook
+        run: |
+          response=$(curl -sf -X POST \
+            -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
+            -H "Content-Type: application/json" \
+            https://swisslanguagegroup.cloud/webhook/deploy-scheduling)
+          echo "$response"
+          echo "$response" | jq -e '.status == "success"'
