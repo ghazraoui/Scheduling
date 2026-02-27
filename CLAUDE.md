@@ -19,6 +19,42 @@ Scheduling (this project)                                    UI App
 | **Scheduling** (this) | `C:\Users\zackg\OneDrive\Desktop\AI Projects\Scheduling` | Scrapes SparkSource + syncs to teacher Outlook calendars via Graph API |
 | **UI** | `C:\Users\zackg\OneDrive\Desktop\Work\SLG\APPS\UI` | Streamlit app — queries Outlook calendars for VIP teacher matching |
 
+## Deployment
+
+**GitHub repo**: `ghazraoui/Scheduling` (private)
+
+```
+Local PC (develop)  →  GitHub (push)  →  VPS (git pull + run)
+```
+
+- **Develop locally** — edit code with Claude on this PC
+- **Push to GitHub** — version control, single source of truth for code
+- **VPS runs the automation** — `/opt/slg/scheduling/` is a `git clone` of this repo
+- **Deploy updates** — `git pull` on VPS picks up changes (or automated via webhook)
+
+### VPS Details
+
+| | |
+|---|---|
+| **Server** | Hostinger KVM 4 — `187.124.12.175` (`swisslanguagegroup.cloud`) |
+| **Path** | `/opt/slg/scheduling/` (git clone) |
+| **Runtime** | Python 3.13 venv at `.venv/`, Playwright + Chromium headless |
+| **Credentials** | `.env` on VPS only (gitignored) — SparkSource + Azure AD |
+| **Logs** | `journalctl -u scheduling-*` (systemd journal) |
+| **Timers** | Systemd timers: method-sfs (Thu), method-esa (Fri), vip (every 2h Mon-Sat) |
+| **Scripts** | `sync_method.sh`, `sync_vip.sh` (v2), `run_full_sync.sh` (v1 fallback) |
+| **Timer management** | `systemctl list-timers scheduling-*`, `systemctl status scheduling-vip` |
+
+### Deploying Changes
+
+```bash
+# On VPS:
+cd /opt/slg/scheduling
+git pull
+# If dependencies changed:
+.venv/bin/pip install -r requirements.txt
+```
+
 ## Project Structure
 
 ```
@@ -39,12 +75,16 @@ Scheduling/
 │       ├── utils.py               # Resource blocking + read-only guardrails
 │       └── pages/
 │           ├── __init__.py
-│           └── schedule.py        # SchedulePage — weekly schedule extraction
+│           └── schedule.py        # SchedulePage — weekly schedule extraction + week navigation
 ├── scripts/
 │   ├── config.py                  # Azure AD credentials (from .env) + Graph API helpers
-│   ├── scrape_schedules.py        # Scrape SparkSource schedules (self-contained)
-│   ├── sync_calendars.py          # Sync method classes → recurring "Teaching" events
-│   ├── sync_private_calendars.py  # Sync private lessons → one-time events with colors
+│   ├── diff_sync.py               # V2 diff engine: compare old/new state, apply targeted changes
+│   ├── scrape_schedules.py        # Scrape SparkSource schedules (--weeks N for multi-week)
+│   ├── sync_calendars.py          # Sync method classes → recurring events (diff-based, --agenda)
+│   ├── sync_private_calendars.py  # Sync private lessons → one-time events (diff-based, --agenda)
+│   ├── sync_method.sh             # V2 wrapper: scrape + diff-sync one method school
+│   ├── sync_vip.sh                # V2 wrapper: scrape + diff-sync all 3 VIP agendas (3 weeks)
+│   ├── run_full_sync.sh           # V1 full pipeline (kept as fallback)
 │   ├── provision_teachers.py      # Create M365 teacher accounts + assign A1 licenses
 │   ├── parse_teachers.py          # Extract teacher data from .docx → teachers.json
 │   ├── tenant_recon.py            # Query tenant info (org, licenses, users, domains)
@@ -53,6 +93,7 @@ Scheduling/
 │   ├── teachers.json              # 56 teachers (name, phone, email, tags, section)
 │   ├── Teachers.xlsx              # Teacher directory (also on SharePoint)
 │   ├── sparksource-schedules.md   # Reference: all 28 SparkSource agendas
+│   ├── last_synced/               # V2 state files: synced events with Outlook IDs (gitignored)
 │   ├── teacher-schedule-sfs_lausanne.json                       # SFS method (20 teachers, 69 slots)
 │   ├── teacher-schedule-esa_lausanne.json                       # ESA method (15 teachers, 55 slots)
 │   ├── teacher-schedule-private_english_lausanne-detailed.json   # Private English detailed (85 classes)
@@ -77,49 +118,85 @@ Imported by all other scripts. Provides:
 Scrapes teacher schedules from SparkSource using Playwright. Self-contained replacement for the Student Follow Up project dependency.
 
 ```bash
-python scripts/scrape_schedules.py --weekly-teachers --agenda sfs_lausanne           # method classes
-python scripts/scrape_schedules.py --weekly-detailed --agenda private_english_lausanne # private lessons
+python scripts/scrape_schedules.py --weekly-teachers --agenda sfs_lausanne           # method classes (1 week)
+python scripts/scrape_schedules.py --weekly-detailed --agenda private_english_lausanne # private lessons (1 week)
+python scripts/scrape_schedules.py --weekly-detailed --agenda private_english_lausanne --weeks 3  # 3 weeks ahead
 python scripts/scrape_schedules.py --table --agenda esa_lausanne                      # today's schedule as table
 python scripts/scrape_schedules.py --headed                                            # debug with visible browser
 ```
 
 - Uses `src/scraper/` module (SchedulePage, session management, read-only guardrails)
 - Supports all agendas: `sfs_lausanne`, `esa_lausanne`, `private_english_lausanne`, etc.
+- `--weeks N`: scrape N consecutive weeks (default: 1). Used by VIP sync to get 3 weeks ahead.
+- Week navigation via URL: `/ffdates/week/booking/YYYY/MM/DD/` — any date shows its containing Mon-Sat week
 - Outputs JSON files to `data/` directory (same format as sync scripts expect)
 - SparkSource credentials loaded from `.env` (`SPARKSOURCE_URL`, `SPARKSOURCE_USER`, `SPARKSOURCE_PASS`)
 
+### `diff_sync.py` — Diff Engine (V2)
+
+Core diff engine for V2 sync. Compares new schedule data against last-synced state and produces targeted Graph API operations.
+
+- `load_last_synced(agenda)` / `save_synced_state(agenda, sync_type, events)` — state file I/O
+- `compute_method_diff(old, new)` — identity key: (upn, day, start_time)
+- `compute_vip_diff(old, new)` — identity key: (upn, date, start_time, activity_code)
+- `apply_method_diff()` / `apply_vip_diff()` — execute Graph API calls for diff
+- `merge_synced_events()` — combine unchanged + new events for state persistence
+- State files: `data/last_synced/{agenda}.json` (gitignored)
+- First run (no state): full clear + create (same as V1), then saves state
+
 ### `sync_calendars.py` — Method Class Sync
 
-Syncs SFS + ESA method class schedules as **recurring weekly** "Teaching" events.
+Syncs SFS + ESA method class schedules as **recurring weekly** "Teaching" events. V2: diff-based sync.
 
 ```bash
-python scripts/sync_calendars.py              # dry-run (default)
-python scripts/sync_calendars.py --execute    # clear old + create events
-python scripts/sync_calendars.py --clear-only # just remove "Teaching" events
+python scripts/sync_calendars.py                              # dry-run (all agendas)
+python scripts/sync_calendars.py --agenda sfs_lausanne         # dry-run (single agenda)
+python scripts/sync_calendars.py --execute                     # diff-sync all agendas
+python scripts/sync_calendars.py --agenda sfs_lausanne --execute  # diff-sync single agenda
+python scripts/sync_calendars.py --clear-only                  # remove all "Teaching" events
 ```
 
 - Reads: `data/teacher-schedule-{sfs,esa}_lausanne.json`
 - Creates: weekly recurring events, `showAs: busy`, no end date
 - Subject: `Teaching`
-- Idempotent (clear-before-create) — safe to re-run
-- Last run (2026-02-24): 34 teachers, 124 events, 0 failures
+- **V2**: Diff-based — only creates/deletes what changed. State in `data/last_synced/`
+- `--agenda`: sync a single school (for per-agenda cron jobs)
+- First run (no state file): full clear + create (like V1), saves state for future diffs
 
 ### `sync_private_calendars.py` — Private Lesson Sync
 
-Syncs private/VIP lessons as **one-time dated** events with type-specific subjects and Outlook color categories.
+Syncs private/VIP lessons as **one-time dated** events with type-specific subjects and Outlook color categories. V2: diff-based sync.
 
 ```bash
-python scripts/sync_private_calendars.py              # dry-run
-python scripts/sync_private_calendars.py --execute    # clear old + create events
-python scripts/sync_private_calendars.py --clear-only # just remove "Private:" events
+python scripts/sync_private_calendars.py                                          # dry-run (all agendas)
+python scripts/sync_private_calendars.py --agenda private_english_lausanne         # dry-run (single agenda)
+python scripts/sync_private_calendars.py --execute                                 # diff-sync all agendas
+python scripts/sync_private_calendars.py --agenda private_english_lausanne --execute  # diff-sync single agenda
+python scripts/sync_private_calendars.py --clear-only                              # remove all "Private:" events
 ```
 
 - Reads: `data/teacher-schedule-private_*_lausanne-detailed.json`
 - Creates: single-occurrence events per class, each with activity type subject and color category
 - Subject format: `Private: VAD - VIP Adults` or `Private: VAD - VIP Adults (Online)`
-- Idempotent (clear-before-create)
-- Last run (2026-02-25): 43 teachers, 306 events, 0 failures
-- **Needs weekly re-sync** — private lessons change each week
+- **V2**: Diff-based — only creates/deletes what changed. State in `data/last_synced/`
+- `--agenda`: sync a single school (for per-agenda cron jobs)
+
+### `sync_method.sh` — Method Class Pipeline (V2)
+
+Wrapper script: scrapes one method school + diff-syncs to Outlook.
+
+```bash
+scripts/sync_method.sh sfs_lausanne   # scrape SFS + diff-sync
+scripts/sync_method.sh esa_lausanne   # scrape ESA + diff-sync
+```
+
+### `sync_vip.sh` — VIP Pipeline (V2)
+
+Wrapper script: scrapes all 3 VIP agendas (3 weeks ahead) + diff-syncs to Outlook.
+
+```bash
+scripts/sync_vip.sh   # scrape English/French/German private (3 weeks) + diff-sync
+```
 
 ### `provision_teachers.py` — Account Provisioning
 
@@ -138,10 +215,10 @@ python scripts/provision_teachers.py --execute  # create accounts
 
 Two distinct types of events, managed by separate scripts with separate subject prefixes:
 
-| Type | Script | Subject | Recurrence | Re-sync frequency |
-|------|--------|---------|------------|-------------------|
-| Method classes | `sync_calendars.py` | `Teaching` | Weekly (no end date) | When schedule changes |
-| Private lessons | `sync_private_calendars.py` | `Private: {type}` | One-time (dated) | Weekly |
+| Type | Script | Subject | Recurrence | Systemd timer |
+|------|--------|---------|------------|---------------|
+| Method classes | `sync_method.sh` | `Teaching` | Weekly (no end date) | `scheduling-method-sfs.timer` Thu, `scheduling-method-esa.timer` Fri |
+| Private lessons | `sync_vip.sh` | `Private: {type}` | One-time (dated, 3 weeks) | `scheduling-vip.timer` every 2h Mon-Sat |
 
 ### Private Lesson Activity Types
 
@@ -243,11 +320,47 @@ All secrets are loaded from a `.env` file (see `.env.example`):
 | `AZURE_CLIENT_SECRET` | `config.py` | Azure AD app client secret |
 | `AZURE_DOMAIN` | `config.py` | M365 domain (default: `swisslearninggroup.onmicrosoft.com`) |
 
+## V2 Sync Architecture
+
+V2 replaces V1's "clear everything + recreate" approach with diff-based sync:
+
+1. **Scrape** current schedule from SparkSource (multi-week for VIP)
+2. **Load** previous state from `data/last_synced/{agenda}.json`
+3. **Diff** — compute added/removed/changed events
+4. **Apply** — targeted Graph API calls (DELETE removed, POST added)
+5. **Save** — write new state with Outlook event IDs
+
+**First run** (no state file): behaves like V1 (full clear + create), saves state.
+**Subsequent runs**: only touches what changed — faster, fewer API calls, lower risk.
+
+### State file format
+
+```json
+{
+  "synced_at": "2026-02-27T13:00:00Z",
+  "agenda": "private_english_lausanne",
+  "sync_type": "vip",
+  "events": {
+    "teacher.email@domain.com": [
+      {
+        "outlook_event_id": "AAMk...",
+        "date": "2026-03-04",
+        "start": "09:00",
+        "end": "10:00",
+        "type": "VAD",
+        "subject": "Private: VAD - VIP Adults"
+      }
+    ]
+  }
+}
+```
+
 ## Future
 
-- **Automate weekly re-sync** of private lessons (they change each week)
 - **Scrape WSE schedules** when available in SparkSource (16 teachers, 0 data currently)
-- Research best approach for periodic automation (n8n, cron, or other)
+- Monday reconciliation — weekly full compare of Outlook vs SparkSource to catch drift
+- Add failure notifications (Teams webhook or email) to sync scripts
+- Expand to other locations (Geneva, Fribourg, Montreux) when needed
 
 ## History
 
@@ -258,3 +371,4 @@ All secrets are loaded from a `.env` file (see `.env.example`):
 - Private lesson sync completed 2026-02-25: 43 teachers, 306 one-time events
 - SparkSource scraper extracted from Student Follow Up into `src/scraper/` on 2026-02-27 — project fully self-contained
 - Azure credentials migrated from hardcoded values to `.env` on 2026-02-27
+- V2 implemented 2026-02-27: diff-based sync, multi-week scraping, per-agenda cron scripts

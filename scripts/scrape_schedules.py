@@ -39,6 +39,7 @@ load_dotenv()
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from src.scraper.pages.schedule import (  # noqa: E402
+    AGENDA_IDS,
     DEFAULT_AGENDA,
     ScheduleEntry,
     SchedulePage,
@@ -66,6 +67,14 @@ _DAY_ORDER = {
 def _log(msg: str) -> None:
     """Write diagnostic messages to stderr so stdout stays clean for JSON."""
     print(msg, file=sys.stderr)
+
+
+def _get_agenda_id(agenda: str) -> str:
+    """Look up the SparkSource agenda ID for an agenda key."""
+    agenda_id = AGENDA_IDS.get(agenda)
+    if agenda_id is None:
+        raise ValueError(f"Unknown agenda {agenda!r}")
+    return agenda_id
 
 
 def _parse_args() -> argparse.Namespace:
@@ -114,6 +123,16 @@ def _parse_args() -> argparse.Namespace:
         help=(
             "Output file path for --weekly-teachers / --weekly-detailed mode. "
             "Default: data/teacher-schedule-{agenda}.json"
+        ),
+    )
+    parser.add_argument(
+        "--weeks",
+        type=int,
+        default=1,
+        help=(
+            "Number of weeks to scrape (default: 1). "
+            "Week 1 = current week, week 2 = next week, etc. "
+            "Only meaningful for --weekly-teachers or --weekly-detailed mode."
         ),
     )
     return parser.parse_args()
@@ -321,6 +340,7 @@ async def main(args: argparse.Namespace) -> None:
     weekly_teachers = args.weekly_teachers
     weekly_detailed = args.weekly_detailed
     output_path = args.output
+    num_weeks = args.weeks
 
     # Default output path for weekly modes
     if weekly_teachers and output_path is None:
@@ -328,7 +348,7 @@ async def main(args: argparse.Namespace) -> None:
     if weekly_detailed and output_path is None:
         output_path = f"data/teacher-schedule-{agenda}-detailed.json"
 
-    _log(f"scrape_schedules: starting (agenda={agenda})")
+    _log(f"scrape_schedules: starting (agenda={agenda}, weeks={num_weeks})")
 
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(headless=not headed)
@@ -387,26 +407,59 @@ async def main(args: argparse.Namespace) -> None:
 
         if weekly_teachers or weekly_detailed:
             # --- Weekly modes (both need Mon-Sat extraction) ---
-            week_dates = _compute_week_dates()
-
+            # Scrape current week + additional weeks if --weeks > 1
             if weekly_detailed:
                 all_detailed: list[tuple[str, str, ScheduleEntry]] = []
-                for date_str, day_name in week_dates:
-                    _log(f"  Extracting {day_name} ({date_str})...")
-                    day_entries = await schedule_page.extract_date(date_str)
-                    for entry in day_entries:
-                        all_detailed.append((date_str, day_name, entry))
-                    _log(f"    {len(day_entries)} entries")
+                for week_idx in range(num_weeks):
+                    week_dates = _compute_week_dates(
+                        date.today() + timedelta(weeks=week_idx)
+                    )
+                    week_label = (
+                        "current week" if week_idx == 0 else f"week +{week_idx}"
+                    )
+                    _log(f"  [{week_label}] {week_dates[0][0]} to {week_dates[-1][0]}")
+
+                    if week_idx > 0:
+                        # Navigate to the next week
+                        target_monday = date.today() + timedelta(weeks=week_idx)
+                        target_monday -= timedelta(days=target_monday.weekday())
+                        await schedule_page.navigate_to_week(BASE_URL, target_monday)
+                        # Re-select agenda after navigation
+                        await schedule_page._select_agenda(_get_agenda_id(agenda))
+
+                    for date_str, day_name in week_dates:
+                        _log(f"    Extracting {day_name} ({date_str})...")
+                        day_entries = await schedule_page.extract_date(date_str)
+                        for entry in day_entries:
+                            all_detailed.append((date_str, day_name, entry))
+                        _log(f"      {len(day_entries)} entries")
 
                 result = _build_detailed_schedule(all_detailed)
             else:
                 all_entries: list[tuple[str, ScheduleEntry]] = []
-                for date_str, day_name in week_dates:
-                    _log(f"  Extracting {day_name} ({date_str})...")
-                    day_entries = await schedule_page.extract_date(date_str)
-                    for entry in day_entries:
-                        all_entries.append((day_name, entry))
-                    _log(f"    {len(day_entries)} entries")
+                for week_idx in range(num_weeks):
+                    week_dates = _compute_week_dates(
+                        date.today() + timedelta(weeks=week_idx)
+                    )
+                    week_label = (
+                        "current week" if week_idx == 0 else f"week +{week_idx}"
+                    )
+                    _log(f"  [{week_label}] {week_dates[0][0]} to {week_dates[-1][0]}")
+
+                    if week_idx > 0:
+                        target_monday = date.today() + timedelta(weeks=week_idx)
+                        target_monday -= timedelta(days=target_monday.weekday())
+                        await schedule_page.navigate_to_week(BASE_URL, target_monday)
+                        await schedule_page._select_agenda(
+                            _get_agenda_id(agenda)
+                        )
+
+                    for date_str, day_name in week_dates:
+                        _log(f"    Extracting {day_name} ({date_str})...")
+                        day_entries = await schedule_page.extract_date(date_str)
+                        for entry in day_entries:
+                            all_entries.append((day_name, entry))
+                        _log(f"      {len(day_entries)} entries")
 
                 result = _aggregate_teacher_schedule(all_entries)
 
@@ -421,8 +474,8 @@ async def main(args: argparse.Namespace) -> None:
             total_slots = sum(len(slots) for slots in result.values())
             mode_label = "detailed" if weekly_detailed else "teacher"
             _log(
-                f"  Weekly {mode_label} schedule: {teacher_count} teachers, "
-                f"{total_slots} slots -> {output_path}"
+                f"  Weekly {mode_label} schedule ({num_weeks} week(s)): "
+                f"{teacher_count} teachers, {total_slots} slots -> {output_path}"
             )
         else:
             # --- Daily mode (today) ---

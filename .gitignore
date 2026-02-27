@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 data/state/
 data/session/
+data/last_synced/*.json
 reports/
 .claude/
 mermaid-filter.err

@@ -4,10 +4,15 @@ Sync teacher teaching schedules to their Outlook calendars as recurring busy eve
 Reads SparkSource schedule JSONs, matches teachers to their M365 accounts,
 and creates weekly recurring "Teaching" events so free/busy queries work.
 
+V2: Uses diff-based sync — only creates/deletes/updates what changed.
+State tracked in data/last_synced/{agenda}.json.
+
 Usage:
-    python scripts/sync_calendars.py              # dry-run (default)
-    python scripts/sync_calendars.py --execute    # clear old + create events
+    python scripts/sync_calendars.py              # dry-run (default, all agendas)
+    python scripts/sync_calendars.py --execute    # diff-sync all agendas
     python scripts/sync_calendars.py --clear-only # just remove existing Teaching events
+    python scripts/sync_calendars.py --agenda sfs_lausanne              # single agenda dry-run
+    python scripts/sync_calendars.py --agenda sfs_lausanne --execute    # single agenda diff-sync
 
 Pre-requisites:
     - App registration must have Calendars.ReadWrite (application) permission
@@ -39,6 +44,14 @@ from config import (
     graph_get_all,
     graph_post,
 )
+from diff_sync import (
+    apply_method_diff,
+    compute_method_diff,
+    format_diff_summary,
+    load_last_synced,
+    merge_synced_events,
+    save_synced_state,
+)
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -47,10 +60,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 REPORTS_DIR = PROJECT_ROOT / "reports"
 
-SCHEDULE_FILES = [
-    DATA_DIR / "teacher-schedule-sfs_lausanne.json",
-    DATA_DIR / "teacher-schedule-esa_lausanne.json",
-]
+# Default schedule files (when no --agenda specified)
+ALL_METHOD_AGENDAS = ["sfs_lausanne", "esa_lausanne"]
 TEACHERS_FILE = DATA_DIR / "teachers.json"
 
 # ---------------------------------------------------------------------------
@@ -235,10 +246,25 @@ def build_event_body(slot, today):
 # ---------------------------------------------------------------------------
 # Core logic
 # ---------------------------------------------------------------------------
-def load_and_merge_schedules():
-    """Load all schedule JSONs and merge into one dict, deduplicating slots."""
+def _schedule_file_for_agenda(agenda: str) -> Path:
+    """Return the schedule file path for a given agenda key."""
+    return DATA_DIR / f"teacher-schedule-{agenda}.json"
+
+
+def load_schedule(agenda: str) -> dict:
+    """Load a single schedule JSON for one agenda."""
+    path = _schedule_file_for_agenda(agenda)
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_and_merge_schedules(agendas: list[str] | None = None) -> dict:
+    """Load schedule JSONs and merge into one dict, deduplicating slots."""
+    if agendas is None:
+        agendas = ALL_METHOD_AGENDAS
     merged = {}
-    for path in SCHEDULE_FILES:
+    for agenda in agendas:
+        path = _schedule_file_for_agenda(agenda)
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         for name, slots in data.items():
@@ -331,21 +357,34 @@ def clear_teaching_events(token, upn):
 
 
 def create_teaching_events(token, upn, slots, today):
-    """Create recurring events for each slot. Returns (created, failed, errors)."""
+    """Create recurring events for each slot.
+
+    Returns (created, failed, errors, created_events) where created_events
+    is a list of dicts with outlook_event_id for state tracking.
+    """
     created = 0
     failed = 0
     errors = []
+    created_events = []
     for slot in slots:
         body = build_event_body(slot, today)
         resp = graph_post(token, f"/users/{upn}/events", body)
         if resp.status_code in (200, 201):
             created += 1
+            event_id = resp.json().get("id", "")
+            created_events.append({
+                "outlook_event_id": event_id,
+                "day": slot["day"],
+                "start": slot["start"],
+                "end": slot["end"],
+                "subject": CALENDAR_EVENT_SUBJECT,
+            })
         else:
             failed += 1
             label = f"{slot['day']} {slot['start']}-{slot['end']}"
             errors.append(f"create {label}: {resp.status_code} {resp.text[:200]}")
             print(f"    FAILED: {label} -- {resp.status_code}")
-    return created, failed, errors
+    return created, failed, errors, created_events
 
 
 # ---------------------------------------------------------------------------
@@ -358,22 +397,28 @@ def main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument(
         "--execute", action="store_true",
-        help="Clear old events and create new recurring events",
+        help="Diff-sync: only create/delete what changed (or full sync on first run)",
     )
     group.add_argument(
         "--clear-only", action="store_true",
         help="Only remove existing Teaching events (no creation)",
     )
+    parser.add_argument(
+        "--agenda", type=str, default=None,
+        help="Single agenda to sync (e.g., sfs_lausanne). Default: all method agendas.",
+    )
     args = parser.parse_args()
 
     mode = "execute" if args.execute else ("clear-only" if args.clear_only else "dry-run")
+    agendas = [args.agenda] if args.agenda else ALL_METHOD_AGENDAS
 
     print("=" * 60)
     print(f"CALENDAR SYNC [{mode.upper()}]")
+    print(f"Agendas: {', '.join(agendas)}")
     print("=" * 60)
 
     # 1. Load and merge schedules
-    merged = load_and_merge_schedules()
+    merged = load_and_merge_schedules(agendas)
     total_slots = sum(len(s) for s in merged.values())
     print(f"Loaded {total_slots} slots for {len(merged)} SparkSource teachers\n")
 
@@ -393,12 +438,28 @@ def main():
     matched_slots = sum(len(m[2]) for m in matched)
     print(f"  Total slots to sync: {matched_slots}\n")
 
-    # 3. Dry-run: just print what would happen
+    # Build new schedule keyed by UPN (for diff comparison)
+    new_schedule_by_upn: dict[str, list[dict]] = {}
+    for display_name, upn, slots in matched:
+        new_schedule_by_upn[upn] = slots
+
+    # 3. Determine sync approach
+    # Use a single agenda key for state (or "all_method" when syncing multiple)
+    state_agenda = args.agenda if args.agenda else "all_method"
+
     if mode == "dry-run":
-        print("--- DRY RUN -- no API calls ---\n")
-        for display_name, upn, slots in matched:
-            labels = [f"{s['day'][:3]} {s['start']}-{s['end']}" for s in slots]
-            print(f"  {display_name} ({len(slots)} events): {', '.join(labels)}")
+        # Show diff preview if state exists, otherwise show full list
+        last_synced = load_last_synced(state_agenda)
+        if last_synced:
+            old_events = last_synced.get("events", {})
+            diff = compute_method_diff(old_events, new_schedule_by_upn)
+            print("--- DRY RUN (diff preview) ---\n")
+            print(format_diff_summary(diff))
+        else:
+            print("--- DRY RUN (no previous state — would do full sync) ---\n")
+            for display_name, upn, slots in matched:
+                labels = [f"{s['day'][:3]} {s['start']}-{s['end']}" for s in slots]
+                print(f"  {display_name} ({len(slots)} events): {', '.join(labels)}")
         print("\nRun with --execute to create events, or --clear-only to remove them.")
         return
 
@@ -409,71 +470,99 @@ def main():
 
     today = date.today()
 
-    report = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "mode": mode,
-        "summary": {
-            "teachers_matched": len(matched),
-            "teachers_unmatched": len(unmatched),
-            "events_cleared": 0,
-            "events_created": 0,
-            "events_failed": 0,
-        },
-        "actions": [],
-        "unmatched": unmatched,
-        "skipped": skipped,
-    }
+    if mode == "clear-only":
+        # Clear all teaching events (no diff needed)
+        total_cleared = 0
+        for display_name, upn, slots in matched:
+            print(f"  {display_name}: clearing old events...")
+            cleared, errors = clear_teaching_events(token, upn)
+            print(f"    Cleared {cleared}")
+            total_cleared += cleared
+        print(f"\nTotal cleared: {total_cleared}")
+        return
 
-    for display_name, upn, slots in matched:
-        action = {
-            "teacher": display_name,
-            "upn": upn,
-            "events_cleared": 0,
-            "events_created": 0,
-            "events_failed": 0,
-            "slots": [f"{s['day'][:3]} {s['start']}-{s['end']}" for s in slots],
-            "errors": [],
-        }
+    # 5. Execute: diff-based sync
+    last_synced = load_last_synced(state_agenda)
 
-        # Clear existing Teaching events
-        print(f"  {display_name}: clearing old events...")
-        cleared, errors = clear_teaching_events(token, upn)
-        action["events_cleared"] = cleared
-        action["errors"].extend(errors)
-        print(f"    Cleared {cleared}")
-        report["summary"]["events_cleared"] += cleared
+    if last_synced is None:
+        # First run — clear existing events and do full create, saving state
+        print("First run (no state file) — full clear + create\n")
+        all_synced_events: dict[str, list[dict]] = {}
+        total_cleared = 0
+        total_created = 0
+        total_failed = 0
 
-        if mode == "clear-only":
-            report["actions"].append(action)
-            continue
+        for display_name, upn, slots in matched:
+            # Clear existing
+            print(f"  {display_name}: clearing old events...")
+            cleared, errors = clear_teaching_events(token, upn)
+            total_cleared += cleared
+            if cleared:
+                print(f"    Cleared {cleared}")
 
-        # Create new recurring events
-        print(f"  {display_name}: creating {len(slots)} events...")
-        created, failed, errors = create_teaching_events(token, upn, slots, today)
-        action["events_created"] = created
-        action["events_failed"] = failed
-        action["errors"].extend(errors)
-        print(f"    Created {created}" + (f", {failed} failed" if failed else ""))
+            # Create new
+            print(f"  {display_name}: creating {len(slots)} events...")
+            created, failed, errors, created_events = create_teaching_events(
+                token, upn, slots, today
+            )
+            total_created += created
+            total_failed += failed
+            print(f"    Created {created}" + (f", {failed} failed" if failed else ""))
 
-        report["summary"]["events_created"] += created
-        report["summary"]["events_failed"] += failed
-        report["actions"].append(action)
+            if created_events:
+                all_synced_events[upn] = created_events
+
+        # Save state
+        state_path = save_synced_state(state_agenda, "method", all_synced_events)
+        print(f"\nState saved: {state_path}")
+        print(f"Cleared: {total_cleared}  |  Created: {total_created}  |  Failed: {total_failed}")
+    else:
+        # Subsequent run — compute diff and apply
+        old_events = last_synced.get("events", {})
+        diff = compute_method_diff(old_events, new_schedule_by_upn)
+
+        print("Diff computed:")
+        print(format_diff_summary(diff))
+        print()
+
+        if not diff["added"] and not diff["removed"] and not diff["changed"]:
+            print("No changes — calendars are up to date.")
+            return
+
+        # Apply diff
+        print("Applying diff...")
+        result = apply_method_diff(
+            token, diff, today,
+            build_event_body_fn=build_event_body,
+            graph_post_fn=graph_post,
+            graph_delete_fn=graph_delete,
+        )
+
+        # Merge unchanged events with newly created ones
+        new_state = merge_synced_events(old_events, diff, result["synced_events"])
+        state_path = save_synced_state(state_agenda, "method", new_state)
+
+        print(f"\nCreated: {result['created']}  |  Deleted: {result['deleted']}  |  Failed: {result['failed']}")
+        if result["errors"]:
+            print("Errors:")
+            for err in result["errors"]:
+                print(f"  {err}")
+        print(f"State saved: {state_path}")
 
     # Save report
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     ts = datetime.now().strftime("%Y-%m-%d_%H%M%S")
     report_path = REPORTS_DIR / f"calendar_sync_{ts}.json"
+    report = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "mode": mode,
+        "agendas": agendas,
+        "teachers_matched": len(matched),
+        "teachers_unmatched": len(unmatched),
+    }
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
-
-    s = report["summary"]
-    print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
-    print(f"{'=' * 60}")
-    print(f"  Cleared:  {s['events_cleared']}")
-    print(f"  Created:  {s['events_created']}")
-    print(f"  Failed:   {s['events_failed']}")
-    print(f"\nReport: {report_path}")
+    print(f"Report: {report_path}")
 
 
 if __name__ == "__main__":

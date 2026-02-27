@@ -23,7 +23,7 @@ Agenda filter (select[name="set_agenda"]):
 """
 
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from playwright.async_api import Page, TimeoutError as PlaywrightTimeoutError
 
@@ -127,6 +127,86 @@ class SchedulePage:
             state="visible", timeout=15000
         )
         log.info("agenda_changed", agenda_id=agenda_id)
+
+    async def navigate_to_week(self, base_url: str, target_date: date) -> None:
+        """Navigate to the week containing the given date.
+
+        Uses URL-based navigation: /ffdates/week/booking/YYYY/MM/DD/
+        SparkSource shows the full Mon-Sat week that contains the given date,
+        so any date within the target week works (not just Monday).
+
+        Args:
+            base_url: SparkSource base URL.
+            target_date: Any date within the target week.
+        """
+        date_path = target_date.strftime("%Y/%m/%d")
+        url = f"{base_url}{self.URL_PATH}/{date_path}/"
+        try:
+            await self.page.goto(url, wait_until="networkidle", timeout=30000)
+            await self.page.locator(self.SCHEDULE_TABLE).wait_for(
+                state="visible", timeout=15000
+            )
+        except PlaywrightTimeoutError:
+            raise TransientError(f"Failed to navigate to week {date_path}")
+
+        log.info("navigated_to_week", target_date=date_path, url=url)
+
+    async def next_week(self, base_url: str) -> None:
+        """Navigate to the next week from the currently displayed week.
+
+        Reads the current week's dates from the DOM, computes next Monday,
+        and navigates to that week via URL.
+
+        Args:
+            base_url: SparkSource base URL.
+        """
+        displayed = await self.get_displayed_week_dates()
+        if not displayed:
+            raise TransientError("Cannot determine current week — no date headers found")
+
+        # Parse the last displayed date and add days to get next Monday
+        last_date = date.fromisoformat(displayed[-1])
+        # Next Monday = last_date + (7 - last_date.weekday()) days
+        next_monday = last_date + timedelta(days=(7 - last_date.weekday()))
+        await self.navigate_to_week(base_url, next_monday)
+
+    async def get_displayed_week_dates(self) -> list[str]:
+        """Read the currently displayed week's dates from the DOM.
+
+        Parses the date headers (tr.day-header th) to extract YYYY-MM-DD dates.
+        The th text format is like "Mon 23rd Feb." — we parse the date from
+        the reserved cells' data-activity_start attributes instead for reliability.
+
+        Returns:
+            List of YYYY-MM-DD strings for the displayed week (Mon-Sat).
+        """
+        # Get unique dates from all reserved cells on the page
+        cells = self.page.locator("td[data-activity_start]")
+        count = await cells.count()
+
+        dates: set[str] = set()
+        for i in range(count):
+            start = await cells.nth(i).get_attribute("data-activity_start") or ""
+            if start and len(start) >= 10:
+                dates.add(start[:10])  # Extract YYYY-MM-DD
+
+        if dates:
+            return sorted(dates)
+
+        # Fallback: parse from header text (less reliable but works on empty weeks)
+        # Headers like "Mon 23rd Feb.", "Tue 24th Feb."
+        headers = self.page.locator("tr.day-header th")
+        header_count = await headers.count()
+        _log_dates: list[str] = []
+        for i in range(header_count):
+            text = (await headers.nth(i).text_content() or "").strip()
+            if text:
+                _log_dates.append(text)
+
+        log.debug("displayed_week_headers", headers=_log_dates)
+        # We can't reliably parse "Mon 23rd Feb." without the year,
+        # so return empty and let the caller handle it
+        return []
 
     async def _build_crid_to_room_map(self) -> dict[str, str]:
         """Build a mapping from crid (classroom resource ID) to room name.
