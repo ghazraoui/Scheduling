@@ -2,8 +2,7 @@ name: Deploy to VPS
 
 on:
   push:
-    branches:
-      - deploy
+    branches: [deploy]
 
 jobs:
   deploy:
@@ -11,9 +10,6 @@ jobs:
     steps:
       - name: Trigger deploy webhook
         run: |
-          response=$(curl -sf -X POST \
+          curl -sf -X POST \
             -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
-            -H "Content-Type: application/json" \
-            https://swisslanguagegroup.cloud/webhook/deploy-scheduling)
-          echo "$response"
-          echo "$response" | jq -e '.status == "success"'
+            https://cc.swisslanguagegroup.cloud/webhook/deploy/scheduling
