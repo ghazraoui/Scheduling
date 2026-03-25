@@ -105,6 +105,13 @@ Scheduling (this project)                                    UI App
 - State files track every synced event with Outlook IDs
 - All syncs are idempotent — running twice produces same result
 
+### Git Discipline (MANDATORY)
+
+- **Commit after every completed task** — not just at end of session. Each meaningful piece of work gets its own commit.
+- **Push immediately after committing** — local-only commits are invisible to VPS agents and the rest of the team.
+- **Never leave a project with uncommitted changes** — a Stop hook auto-commits as a safety net, but agents should commit proactively, not rely on the hook.
+- **Why:** VPS agents (morning briefing, Telegram ABBI, dispatched agents) read from GitHub. If changes aren't pushed, VPS sees stale state. This causes incorrect reports, wasted tokens, and wrong decisions.
+
 ## Project State
 
 Current progress is tracked in [`.planning/STATE.md`](.planning/STATE.md).
