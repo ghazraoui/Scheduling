@@ -90,10 +90,11 @@ sudo systemctl start scheduling-vip         # Manual trigger
 | `scripts/provision_teachers.py` | Create M365 accounts + assign A1 licenses | Done |
 | `scripts/tenant_recon.py` | Query tenant info | Done |
 | `scripts/tenant_review.py` | Tenant account review with activity data | Done |
+| `scripts/reconcile.py` | Reconcile state files vs live Outlook events (read-only, `--agenda`) | Done |
 
 ## TODO (future, not blocking)
 
-- [ ] Monday reconciliation — weekly full compare of Outlook vs SparkSource to catch drift
+- [x] Monday reconciliation — `scripts/reconcile.py` checks all tracked Outlook event IDs vs live Graph API (2026-03-26)
 - [ ] WSE schedules — when available in SparkSource (16 teachers, different platform for method)
 - [ ] Failure notifications — Teams webhook or email on sync errors
 - [ ] Expand to other locations (Geneva, Fribourg, Montreux) when needed
