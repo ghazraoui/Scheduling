@@ -36,7 +36,7 @@ class DeployHandler(BaseHTTPRequestHandler):
 
         try:
             result = subprocess.run(
-                ["git", "pull", "origin", "deploy"],
+                ["git", "pull", "origin", "main"],
                 cwd=DEPLOY_DIR,
                 capture_output=True,
                 text=True,
