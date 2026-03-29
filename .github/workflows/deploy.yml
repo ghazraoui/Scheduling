@@ -13,3 +13,12 @@ jobs:
           curl -sf -X POST \
             -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
             https://cc.swisslanguagegroup.cloud/webhook/deploy/scheduling
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          curl -sf -X POST \
+            -H "Content-Type: application/json" \
+            -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
+            -d '{"repo": "${{ github.repository }}", "run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}", "error_output": "Deploy webhook returned non-zero exit code", "commit_sha": "${{ github.sha }}", "commit_message": "${{ github.event.head_commit.message }}"}' \
+            https://cc.swisslanguagegroup.cloud/webhook/deploy-alert
