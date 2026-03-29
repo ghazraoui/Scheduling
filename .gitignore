@@ -7,3 +7,4 @@ data/last_synced/*.json
 reports/
 .claude/
 mermaid-filter.err
+*.egg-info/
