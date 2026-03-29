@@ -1,10 +1,11 @@
 # Scheduling Project Memory (formerly VIPs)
 
+Last consolidated: 2026-03-29
+
 ## Project Identity
 - **Name**: Scheduling (renamed from VIPs on 2026-02-25)
 - **Purpose**: Teacher calendar management — sync SparkSource schedule data to Outlook calendars
 - **Location**: `C:\Users\zackg\OneDrive\Desktop\AI Projects\Scheduling`
-- **NOTE**: Migrated from VIPs memory (2026-03-27). Physical rename complete.
 
 ## Three-Project Architecture
 ```
@@ -42,7 +43,6 @@ Student Follow Up              Scheduling (this project)           UI App
 - Azure AD permission grants can take 1-5 minutes to propagate
 - SharePoint Excel workbook API needs direct drive path, not `/shares` with app-only tokens
 - Planner API requires `Tasks.ReadWrite.All` (Application) for app-only token access
-- Cannot rename a folder while Claude Code CWD is inside it — must be done manually
 
 ## Credentials / Config
 - Shared config in `scripts/config.py` — all scripts import from there
@@ -52,6 +52,5 @@ Student Follow Up              Scheduling (this project)           UI App
 
 ## Next Up
 1. Scrape WSE schedules from SparkSource (16 teachers, 0 data)
-2. Automate weekly re-sync of private lessons
-3. Research automation approach (n8n, cron, or other)
-4. Test VIP matching from Streamlit UI (in UI project)
+2. Automate weekly re-sync of private lessons (systemd timer or cron — n8n canceled)
+3. Test VIP matching from Streamlit UI (in UI project)

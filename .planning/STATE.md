@@ -3,8 +3,20 @@
 ## Current State
 
 - **V2 LIVE on VPS** — diff-based sync, multi-week scraping, systemd timers running
+- **Services fixed Mar 29** — User=slg, chmod +x, venv installed. Timers active again after 5-10 days broken.
+- **Blocker:** .env needs SparkSource + Azure credentials before actual sync runs work
 - **Teacher provisioning**: Complete — 56 active M365 accounts
 - **VIP matching logic**: Migrated to UI app (`vip_planner.py`) — no longer in this project
+- **Diff-sync tests merged** (Cal #2, Mar 29)
+- **Enriched sync reports merged** (Cal #3, Mar 29)
+
+## Next Actions
+
+1. [ ] Add integration tests for the full sync pipeline (not just diff_sync unit tests)
+2. [ ] Add Outlook calendar validation — after sync, verify created events actually appear in Outlook
+3. [ ] Add sync monitoring — post sync results to CC API so Dash can display calendar health
+4. [ ] Investigate WSE schedule data availability in SparkSource
+5. [ ] Add error alerting — on sync failure, notify via Telegram (similar to Momo pattern)
 
 ## V2 — Production Sync (LIVE)
 
@@ -33,7 +45,10 @@ sudo systemctl start scheduling-vip         # Manual trigger
 - [x] Method sync second run: `Added: 0, Removed: 0, Changed: 0, Unchanged: 68`
 - [x] VIP sync first run: 380 events across 3 agendas (3 weeks each)
 - [x] Systemd timers installed and active
-- [ ] Monitor first automated runs
+- [x] Services fixed (Mar 29) — User=slg, chmod +x, venv installed
+- [x] Diff-sync tests merged (Cal #2, Mar 29)
+- [x] Enriched sync reports merged (Cal #3, Mar 29)
+- [ ] Monitor first automated runs (blocked on .env credentials)
 - [ ] Remove `scripts/test_week_nav.py` after confidence established
 
 ### Key design decisions
@@ -46,7 +61,7 @@ sudo systemctl start scheduling-vip         # Manual trigger
 
 ## VPS Deployment — COMPLETE
 
-**Model**: Local PC (`main`) → merge to `deploy` branch → GitHub Actions webhook → VPS auto-pulls
+**Model**: Local PC (`main`) → GitHub → VPS auto-pulls (repo-sync every 5 min)
 
 - [x] GitHub repo created and pushed
 - [x] SparkSource scraper extracted from Student Follow Up (self-contained)
@@ -58,6 +73,13 @@ sudo systemctl start scheduling-vip         # Manual trigger
 - [x] VPS: `.env` created with locked permissions (chmod 600)
 - [x] VPS: Full pipeline dry-run successful (5 agendas scraped, both syncs ran)
 - [x] VPS: Log directory at `/var/log/scheduling/`
+
+## Blocked
+
+| Item | Blocked By | Since |
+|------|-----------|-------|
+| Actual sync runs | .env needs SparkSource + Azure credentials | Mar 2026 |
+| WSE schedule sync | SparkSource has no WSE schedule data | Feb 2026 |
 
 ## Completed (V1 / POC)
 
@@ -91,9 +113,5 @@ sudo systemctl start scheduling-vip         # Manual trigger
 | `scripts/tenant_recon.py` | Query tenant info | Done |
 | `scripts/tenant_review.py` | Tenant account review with activity data | Done |
 
-## TODO (future, not blocking)
-
-- [ ] Monday reconciliation — weekly full compare of Outlook vs SparkSource to catch drift
-- [ ] WSE schedules — when available in SparkSource (16 teachers, different platform for method)
-- [ ] Failure notifications — Teams webhook or email on sync errors
-- [ ] Expand to other locations (Geneva, Fribourg, Montreux) when needed
+---
+*Last updated: 2026-03-29*
