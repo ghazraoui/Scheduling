@@ -379,6 +379,18 @@ def main():
     mode = "execute" if args.execute else ("clear-only" if args.clear_only else "dry-run")
     agendas = [args.agenda] if args.agenda else ALL_PRIVATE_AGENDAS
 
+    # Result tracking — populated through all execute code paths
+    events_created = 0
+    events_deleted = 0
+    events_failed = 0
+    all_errors: list[str] = []
+    diff_added = 0
+    diff_removed = 0
+    diff_changed = 0
+    diff_unchanged = 0
+    first_run = False
+    no_changes = False
+
     print("=" * 60)
     print(f"PRIVATE CALENDAR SYNC [{mode.upper()}]")
     print(f"Agendas: {', '.join(agendas)}")
@@ -474,6 +486,7 @@ def main():
     if last_synced is None:
         # First run — clear existing events and do full create, saving state
         print("First run (no state file) — full clear + create\n")
+        first_run = True
         all_synced_events: dict[str, list[dict]] = {}
         total_cleared = 0
         total_created = 0
@@ -482,22 +495,28 @@ def main():
         for display_name, upn, slots in matched:
             # Clear existing
             print(f"  {display_name}: clearing old private events...")
-            cleared, errors = clear_private_events(token, upn)
+            cleared, clear_errs = clear_private_events(token, upn)
             total_cleared += cleared
+            all_errors.extend(clear_errs)
             if cleared:
                 print(f"    Cleared {cleared}")
 
             # Create new
             print(f"  {display_name}: creating {len(slots)} events...")
-            created, failed, errors, created_events = create_private_events(
+            created, failed, create_errs, created_events = create_private_events(
                 token, upn, slots
             )
             total_created += created
             total_failed += failed
+            all_errors.extend(create_errs)
             print(f"    Created {created}" + (f", {failed} failed" if failed else ""))
 
             if created_events:
                 all_synced_events[upn] = created_events
+
+        events_created = total_created
+        events_deleted = total_cleared
+        events_failed = total_failed
 
         # Save state
         state_path = save_synced_state(state_agenda, "vip", all_synced_events)
@@ -507,6 +526,10 @@ def main():
         # Subsequent run — compute diff and apply
         old_events = last_synced.get("events", {})
         diff = compute_vip_diff(old_events, new_schedule_by_upn)
+        diff_added = len(diff["added"])
+        diff_removed = len(diff["removed"])
+        diff_changed = len(diff["changed"])
+        diff_unchanged = diff["unchanged_count"]
 
         print("Diff computed:")
         print(format_diff_summary(diff))
@@ -514,28 +537,33 @@ def main():
 
         if not diff["added"] and not diff["removed"] and not diff["changed"]:
             print("No changes — calendars are up to date.")
-            return
+            no_changes = True
+        else:
+            # Apply diff
+            print("Applying diff...")
+            result = apply_vip_diff(
+                token, diff,
+                build_event_body_fn=build_private_event_body,
+                get_event_subject_fn=get_event_subject,
+                graph_post_fn=graph_post,
+                graph_delete_fn=graph_delete,
+            )
 
-        # Apply diff
-        print("Applying diff...")
-        result = apply_vip_diff(
-            token, diff,
-            build_event_body_fn=build_private_event_body,
-            get_event_subject_fn=get_event_subject,
-            graph_post_fn=graph_post,
-            graph_delete_fn=graph_delete,
-        )
+            events_created = result["created"]
+            events_deleted = result["deleted"]
+            events_failed = result["failed"]
+            all_errors = result["errors"]
 
-        # Merge unchanged events with newly created ones
-        new_state = merge_synced_events(old_events, diff, result["synced_events"])
-        state_path = save_synced_state(state_agenda, "vip", new_state)
+            # Merge unchanged events with newly created ones
+            new_state = merge_synced_events(old_events, diff, result["synced_events"])
+            state_path = save_synced_state(state_agenda, "vip", new_state)
 
-        print(f"\nCreated: {result['created']}  |  Deleted: {result['deleted']}  |  Failed: {result['failed']}")
-        if result["errors"]:
-            print("Errors:")
-            for err in result["errors"]:
-                print(f"  {err}")
-        print(f"State saved: {state_path}")
+            print(f"\nCreated: {result['created']}  |  Deleted: {result['deleted']}  |  Failed: {result['failed']}")
+            if result["errors"]:
+                print("Errors:")
+                for err in result["errors"]:
+                    print(f"  {err}")
+            print(f"State saved: {state_path}")
 
     # Save report
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -547,6 +575,16 @@ def main():
         "agendas": agendas,
         "teachers_matched": len(matched),
         "teachers_unmatched": len(unmatched),
+        "events_created": events_created,
+        "events_deleted": events_deleted,
+        "events_failed": events_failed,
+        "errors": all_errors,
+        "diff_added": diff_added,
+        "diff_removed": diff_removed,
+        "diff_changed": diff_changed,
+        "diff_unchanged": diff_unchanged,
+        "first_run": first_run,
+        "no_changes": no_changes,
     }
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
