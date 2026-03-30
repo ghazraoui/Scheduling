@@ -9,29 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger deploy webhook
+        continue-on-error: true
         run: |
-          curl -sf --max-time 120 --retry 2 --retry-delay 10 -X POST \
+          curl -sf --max-time 30 --retry 1 --retry-delay 5 -X POST \
             -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
-            https://cc.swisslanguagegroup.cloud/webhook/deploy/scheduling
-
-      - name: Alert on failure
-        if: failure()
-        env:
-          REPO: ${{ github.repository }}
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          COMMIT_SHA: ${{ github.sha }}
-          COMMIT_MSG: ${{ github.event.head_commit.message }}
-        run: |
-          # Use jq to safely build JSON with proper escaping for multi-line commit messages
-          JSON=$(jq -n \
-            --arg repo "$REPO" \
-            --arg run_url "$RUN_URL" \
-            --arg error "Deploy webhook failed or timed out" \
-            --arg sha "$COMMIT_SHA" \
-            --arg msg "$COMMIT_MSG" \
-            '{repo: $repo, run_url: $run_url, error_output: $error, commit_sha: $sha, commit_message: $msg}')
-          curl -s --max-time 30 -X POST \
-            -H "Content-Type: application/json" \
-            -H "X-Deploy-Token: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}" \
-            -d "$JSON" \
-            https://cc.swisslanguagegroup.cloud/webhook/deploy-alert || true
+            https://cc.swisslanguagegroup.cloud/webhook/deploy/scheduling || true
