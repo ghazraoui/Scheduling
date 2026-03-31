@@ -24,7 +24,7 @@ cd "$PROJECT_DIR"
 # Exit handler for failure notifications
 on_error() {
     echo "$LOG_PREFIX FAILED at step: $CURRENT_STEP (agenda: $AGENDA)"
-    # TODO: Add Teams/email webhook notification here
+    "$VENV" "$SCRIPTS/notify.py" "📅 Cal sync FAILED: $AGENDA at step $CURRENT_STEP" || true
     exit 1
 }
 trap on_error ERR
