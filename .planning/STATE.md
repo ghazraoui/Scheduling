@@ -16,7 +16,7 @@
 2. [ ] Add Outlook calendar validation — after sync, verify created events actually appear in Outlook
 3. [ ] Add sync monitoring — post sync results to CC API so Dash can display calendar health
 4. [ ] Investigate WSE schedule data availability in SparkSource
-5. [ ] Add error alerting — on sync failure, notify via Telegram (similar to Momo pattern)
+5. [x] Add error alerting — on sync failure, notify via Telegram (similar to Momo pattern)
 
 ## V2 — Production Sync (LIVE)
 
@@ -49,7 +49,7 @@ sudo systemctl start scheduling-vip         # Manual trigger
 - [x] Diff-sync tests merged (Cal #2, Mar 29)
 - [x] Enriched sync reports merged (Cal #3, Mar 29)
 - [ ] Monitor first automated runs — .env populated Apr 1
-- [ ] Remove `scripts/test_week_nav.py` after confidence established
+- [x] Remove `scripts/test_week_nav.py` after confidence established
 
 ### Key design decisions
 
@@ -114,4 +114,4 @@ sudo systemctl start scheduling-vip         # Manual trigger
 | `scripts/tenant_review.py` | Tenant account review with activity data | Done |
 
 ---
-*Last updated: 2026-03-29*
+*Last updated: 2026-04-01*
