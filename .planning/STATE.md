@@ -4,7 +4,7 @@
 
 - **V2 LIVE on VPS** — diff-based sync, multi-week scraping, systemd timers running
 - **Services fixed Mar 29** — User=slg, chmod +x, venv installed. Timers active again after 5-10 days broken.
-- **Blocker:** .env needs SparkSource + Azure credentials before actual sync runs work
+- .env populated (Apr 1) — live sync unblocked
 - **Teacher provisioning**: Complete — 56 active M365 accounts
 - **VIP matching logic**: Migrated to UI app (`vip_planner.py`) — no longer in this project
 - **Diff-sync tests merged** (Cal #2, Mar 29)
@@ -48,7 +48,7 @@ sudo systemctl start scheduling-vip         # Manual trigger
 - [x] Services fixed (Mar 29) — User=slg, chmod +x, venv installed
 - [x] Diff-sync tests merged (Cal #2, Mar 29)
 - [x] Enriched sync reports merged (Cal #3, Mar 29)
-- [ ] Monitor first automated runs (blocked on .env credentials)
+- [ ] Monitor first automated runs — .env populated Apr 1
 - [ ] Remove `scripts/test_week_nav.py` after confidence established
 
 ### Key design decisions
