@@ -33,6 +33,22 @@
       "online": false
     },
     {
+      "date": "2026-04-09",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-09",
+      "start": "13:30",
+      "end": "14:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-04-10",
       "start": "16:00",
       "end": "17:00",
@@ -118,14 +134,6 @@
       "date": "2026-04-08",
       "start": "18:30",
       "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-09",
-      "start": "16:30",
-      "end": "17:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -635,6 +643,14 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Naïma REY": [

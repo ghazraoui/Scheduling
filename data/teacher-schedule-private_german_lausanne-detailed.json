@@ -49,45 +49,19 @@
       "online": true
     }
   ],
-  "Judit PESZLEN": [
-    {
-      "date": "2026-04-07",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-07",
-      "start": "14:00",
-      "end": "14:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-09",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-14",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
   "Asita ARYAN MAIN": [
     {
       "date": "2026-04-07",
-      "start": "11:30",
-      "end": "12:30",
+      "start": "10:30",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-08",
+      "start": "14:00",
+      "end": "15:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -147,6 +121,40 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    }
+  ],
+  "Judit PESZLEN": [
+    {
+      "date": "2026-04-07",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-07",
+      "start": "14:00",
+      "end": "14:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-09",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-14",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Kerstin ESA WEINMANN MAIN": [
