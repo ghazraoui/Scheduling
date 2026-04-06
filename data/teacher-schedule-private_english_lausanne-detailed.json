@@ -114,8 +114,24 @@
     },
     {
       "date": "2026-04-11",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-11",
       "start": "10:00",
       "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-11",
+      "start": "17:00",
+      "end": "18:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -124,6 +140,14 @@
       "date": "2026-04-18",
       "start": "16:00",
       "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-21",
+      "start": "14:00",
+      "end": "15:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -201,6 +225,62 @@
       "type": "JPR",
       "name": "Juniors Private",
       "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "13:15",
+      "end": "14:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
     }
   ],
   "Maria TINEL": [
@@ -226,6 +306,38 @@
       "end": "14:00",
       "type": "ICO",
       "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "JGP",
+      "name": "Juniors Group",
       "online": false
     }
   ],
@@ -397,6 +509,54 @@
       "type": "ICO",
       "name": "Out Centre",
       "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-22",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-22",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-24",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
     }
   ],
   "Kristen KEISER": [
@@ -414,6 +574,30 @@
       "end": "18:30",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "16:00",
+      "end": "16:45",
+      "type": "JPR",
+      "name": "Juniors Private",
       "online": false
     }
   ],
@@ -472,6 +656,128 @@
       "end": "11:45",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
+      "start": "09:00",
+      "end": "10:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
+      "start": "10:30",
+      "end": "12:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
+      "start": "17:00",
+      "end": "17:45",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "14:00",
+      "end": "15:30",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "11:00",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Madeline BROWN": [
+    {
+      "date": "2026-04-22",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
       "online": false
     }
   ]
