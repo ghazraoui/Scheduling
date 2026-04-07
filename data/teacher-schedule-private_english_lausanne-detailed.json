@@ -164,14 +164,6 @@
     },
     {
       "date": "2026-04-08",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-08",
       "start": "11:00",
       "end": "12:15",
       "type": "VAD",
@@ -224,6 +216,14 @@
       "end": "15:00",
       "type": "JPR",
       "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-09",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     },
     {
@@ -338,6 +338,32 @@
       "end": "13:00",
       "type": "JGP",
       "name": "Juniors Group",
+      "online": false
+    }
+  ],
+  "Karen PARRONE": [
+    {
+      "date": "2026-04-07",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-08",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-09",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     }
   ],
