@@ -38,6 +38,14 @@ echo "$LOG_PREFIX Scraping $AGENDA method schedule..."
 $VENV $SCRIPTS/scrape_schedules.py --weekly-teachers --agenda "$AGENDA" \
     --output "$DATA/teacher-schedule-${AGENDA}.json"
 
+OUTPUT_FILE="$DATA/teacher-schedule-${AGENDA}.json"
+TEACHER_COUNT=$("$VENV" -c "import json; d=json.load(open('$OUTPUT_FILE')); print(len(d))")
+echo "$LOG_PREFIX Scrape returned $TEACHER_COUNT teachers for $AGENDA"
+if [ "$TEACHER_COUNT" -eq 0 ]; then
+    "$VENV" "$SCRIPTS/notify.py" "🚨 Cal method sync ABORTED: $AGENDA scrape returned empty data (0 teachers) — sync skipped to prevent calendar wipe" || true
+    exit 1
+fi
+
 # 2. Diff-sync to Outlook
 CURRENT_STEP="sync"
 echo "$LOG_PREFIX Diff-syncing $AGENDA to Outlook..."
