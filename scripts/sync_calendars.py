@@ -77,8 +77,10 @@ STRIP_TOKENS = {
 }
 
 # Hardcoded overrides: cleaned SparkSource name -> teachers.json name
-# (Empty after name corrections on 2026-02-24 — all names now match directly)
-NAME_OVERRIDES = {}
+# SparkSource sometimes uses only the second part of a hyphenated surname.
+NAME_OVERRIDES = {
+    "Derna Schwab": "Derna Lambert-Schwab",  # SparkSource truncates hyphenated surname to second part only
+}
 
 # Teachers in SparkSource but not provisioned — skip silently
 SKIP_NAMES = set()
