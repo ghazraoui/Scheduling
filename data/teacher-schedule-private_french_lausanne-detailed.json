@@ -106,7 +106,7 @@
       "end": "12:30",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": true
+      "online": false
     },
     {
       "date": "2026-04-13",
@@ -114,6 +114,22 @@
       "end": "14:30",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-14",
+      "start": "15:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-15",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
       "online": false
     },
     {
@@ -126,6 +142,14 @@
     },
     {
       "date": "2026-04-16",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
       "start": "13:30",
       "end": "14:30",
       "type": "VAD",
@@ -134,8 +158,8 @@
     },
     {
       "date": "2026-04-17",
-      "start": "16:00",
-      "end": "17:00",
+      "start": "15:30",
+      "end": "17:30",
       "type": "VIP",
       "name": "VIP Class",
       "online": false
@@ -166,22 +190,6 @@
     },
     {
       "date": "2026-04-21",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-04-22",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-22",
       "start": "13:00",
       "end": "14:00",
       "type": "ICO",
@@ -410,14 +418,6 @@
     },
     {
       "date": "2026-04-16",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-16",
       "start": "17:30",
       "end": "18:30",
       "type": "VAD",
@@ -492,6 +492,48 @@
       "date": "2026-04-23",
       "start": "17:30",
       "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Morgan DALIN": [
+    {
+      "date": "2026-04-14",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-15",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-15",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "13:30",
+      "end": "14:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "16:00",
+      "end": "17:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
