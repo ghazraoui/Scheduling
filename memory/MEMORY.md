@@ -1,6 +1,6 @@
 # Scheduling Project Memory (formerly VIPs)
 
-Last consolidated: 2026-03-29
+Last consolidated: 2026-03-31 (Dream run 24 — added .env blocker)
 
 ## Project Identity
 - **Name**: Scheduling (renamed from VIPs on 2026-02-25)
@@ -49,6 +49,9 @@ Student Follow Up              Scheduling (this project)           UI App
 - Azure app: `63a2f848-ceb5-497f-aed2-3936893c3247`
 - A1 Faculty SKU: `94763226-9b3c-4e75-a931-5c89701abe66`
 - Domain: `swisslearninggroup.onmicrosoft.com`
+
+## Blockers
+- **VPS .env missing credentials**: SparkSource login + Azure app secret needed for VPS deployment. Local works, VPS sync scripts cannot run without these.
 
 ## Next Up
 1. Scrape WSE schedules from SparkSource (16 teachers, 0 data)
