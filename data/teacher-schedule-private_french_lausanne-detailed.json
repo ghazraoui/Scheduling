@@ -171,6 +171,24 @@
       "online": false
     }
   ],
+  "Samuel FRANCOIS": [
+    {
+      "date": "2026-04-20",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    }
+  ],
   "Karine BLATTER": [
     {
       "date": "2026-04-20",
@@ -488,6 +506,16 @@
       "date": "2026-04-23",
       "start": "18:30",
       "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Paul CRETTEX": [
+    {
+      "date": "2026-04-24",
+      "start": "09:00",
+      "end": "10:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
