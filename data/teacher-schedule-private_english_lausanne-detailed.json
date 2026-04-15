@@ -1,7 +1,7 @@
 {
-  "Suzy EMMERTON": [
+  "Emily VIP/TP TAYLOR": [
     {
-      "date": "2026-04-20",
+      "date": "2026-04-13",
       "start": "09:00",
       "end": "10:00",
       "type": "VAD",
@@ -9,15 +9,7 @@
       "online": false
     },
     {
-      "date": "2026-04-20",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-21",
+      "date": "2026-04-14",
       "start": "09:00",
       "end": "10:00",
       "type": "VAD",
@@ -25,19 +17,295 @@
       "online": false
     },
     {
-      "date": "2026-04-22",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-22",
-      "start": "13:15",
+      "date": "2026-04-14",
+      "start": "13:00",
       "end": "14:00",
-      "type": "JPR",
-      "name": "Juniors Private",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Jacqueline ANDERSON": [
+    {
+      "date": "2026-04-13",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-13",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-13",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-13",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-13",
+      "start": "18:45",
+      "end": "19:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-14",
+      "start": "13:00",
+      "end": "13:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-14",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-14",
+      "start": "18:30",
+      "end": "19:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-14",
+      "start": "19:15",
+      "end": "20:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-15",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-20",
+      "start": "18:45",
+      "end": "19:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-22",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-22",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-24",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
+      "start": "18:45",
+      "end": "19:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-29",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-29",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-30",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-04-30",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    }
+  ],
+  "Kristen KEISER": [
+    {
+      "date": "2026-04-13",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     },
     {
@@ -57,259 +325,23 @@
       "online": false
     },
     {
-      "date": "2026-04-23",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-23",
-      "start": "14:00",
-      "end": "15:00",
+      "date": "2026-04-22",
+      "start": "16:00",
+      "end": "16:45",
       "type": "JPR",
       "name": "Juniors Private",
-      "online": false
-    },
-    {
-      "date": "2026-04-24",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Jacqueline ANDERSON": [
-    {
-      "date": "2026-04-20",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-20",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-20",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-20",
-      "start": "17:45",
-      "end": "18:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-20",
-      "start": "18:45",
-      "end": "19:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-22",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VIP",
-      "name": "VIP Class",
-      "online": true
-    },
-    {
-      "date": "2026-04-22",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-23",
-      "start": "11:00",
-      "end": "12:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": true
-    },
-    {
-      "date": "2026-04-23",
-      "start": "12:30",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": true
-    },
-    {
-      "date": "2026-04-24",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VIP",
-      "name": "VIP Class",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "17:45",
-      "end": "18:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "18:45",
-      "end": "19:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VIP",
-      "name": "VIP Class",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "11:00",
-      "end": "12:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "12:30",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": true
-    }
-  ],
-  "Maria TINEL": [
-    {
-      "date": "2026-04-20",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-20",
-      "start": "17:30",
-      "end": "18:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-25",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-04-25",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-04-25",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-04-25",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-05-02",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-05-02",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-05-02",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-05-02",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "JGP",
-      "name": "Juniors Group",
       "online": false
     }
   ],
   "Ron BULWITH": [
+    {
+      "date": "2026-04-14",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
     {
       "date": "2026-04-21",
       "start": "09:00",
@@ -320,6 +352,46 @@
     }
   ],
   "Claire PRENDERGAST": [
+    {
+      "date": "2026-04-14",
+      "start": "09:00",
+      "end": "10:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-14",
+      "start": "10:30",
+      "end": "12:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-15",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "11:00",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
     {
       "date": "2026-04-21",
       "start": "09:00",
@@ -473,25 +545,103 @@
       "online": false
     }
   ],
-  "Sharon GARY": [
+  "Suzy EMMERTON": [
     {
-      "date": "2026-04-21",
-      "start": "14:00",
-      "end": "15:00",
+      "date": "2026-04-14",
+      "start": "10:00",
+      "end": "11:00",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": true
+      "online": false
     },
     {
-      "date": "2026-04-28",
-      "start": "14:00",
-      "end": "15:00",
+      "date": "2026-04-14",
+      "start": "14:30",
+      "end": "15:30",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Kristen KEISER": [
+      "online": false
+    },
+    {
+      "date": "2026-04-15",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-15",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "13:15",
+      "end": "14:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
     {
       "date": "2026-04-22",
       "start": "14:00",
@@ -509,11 +659,293 @@
       "online": false
     },
     {
-      "date": "2026-04-22",
-      "start": "16:00",
-      "end": "16:45",
+      "date": "2026-04-23",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "14:00",
+      "end": "15:00",
       "type": "JPR",
       "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Paul MCCAFFREY": [
+    {
+      "date": "2026-04-14",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Jamie RITZO": [
+    {
+      "date": "2026-04-14",
+      "start": "13:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-14",
+      "start": "15:00",
+      "end": "15:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Maria TINEL": [
+    {
+      "date": "2026-04-14",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "10:00",
+      "end": "10:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "12:15",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "16:00",
+      "end": "16:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-17",
+      "start": "16:45",
+      "end": "17:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-25",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    }
+  ],
+  "Sharon GARY": [
+    {
+      "date": "2026-04-15",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-16",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-17",
+      "start": "09:00",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-18",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-18",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-21",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-28",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Karen PARRONE": [
+    {
+      "date": "2026-04-15",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-16",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     }
   ],

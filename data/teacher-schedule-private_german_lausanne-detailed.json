@@ -75,6 +75,72 @@
       "online": false
     }
   ],
+  "Sandra AIT MAIN": [
+    {
+      "date": "2026-04-20",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "13:15",
+      "end": "14:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-20",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "19:00",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "12:15",
+      "end": "13:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Simone TIETZ CR": [
     {
       "date": "2026-04-20",
@@ -221,14 +287,22 @@
       "online": true
     }
   ],
-  "Sandra AIT MAIN": [
+  "Korinna ARING": [
     {
-      "date": "2026-04-20",
-      "start": "18:00",
-      "end": "19:00",
+      "date": "2026-04-21",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "08:00",
+      "end": "09:00",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": false
+      "online": true
     }
   ],
   "Johanna PACZULLA": [
