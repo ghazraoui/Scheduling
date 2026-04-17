@@ -191,6 +191,14 @@
       "online": true
     },
     {
+      "date": "2026-04-21",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
       "date": "2026-04-22",
       "start": "08:00",
       "end": "09:00",
@@ -231,11 +239,27 @@
       "online": true
     },
     {
+      "date": "2026-04-22",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
       "date": "2026-04-23",
       "start": "10:00",
       "end": "11:00",
       "type": "TPC",
       "name": "Test Preparation Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VIP",
+      "name": "VIP Class",
       "online": true
     },
     {
@@ -280,6 +304,14 @@
     },
     {
       "date": "2026-04-27",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-04-27",
       "start": "13:00",
       "end": "13:45",
       "type": "VAD",
@@ -300,6 +332,40 @@
       "end": "17:00",
       "type": "JPR",
       "name": "Juniors Private",
+      "online": true
+    }
+  ],
+  "Judit PESZLEN": [
+    {
+      "date": "2026-04-20",
+      "start": "14:00",
+      "end": "14:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-21",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-21",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-23",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": true
     }
   ],
@@ -358,10 +424,34 @@
   "Johanna PACZULLA": [
     {
       "date": "2026-04-22",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
       "start": "14:00",
       "end": "15:00",
       "type": "JGP",
       "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "13:15",
+      "end": "14:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-01",
+      "start": "13:15",
+      "end": "14:15",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     }
   ],
