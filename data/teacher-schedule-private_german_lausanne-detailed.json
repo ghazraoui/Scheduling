@@ -18,6 +18,14 @@
     },
     {
       "date": "2026-04-21",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-21",
       "start": "12:30",
       "end": "13:30",
       "type": "VAD",
@@ -34,8 +42,24 @@
     },
     {
       "date": "2026-04-22",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
       "start": "15:30",
       "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "18:15",
+      "end": "19:15",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -150,6 +174,14 @@
     },
     {
       "date": "2026-04-23",
+      "start": "11:00",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
       "start": "16:30",
       "end": "17:30",
       "type": "VAD",
@@ -160,6 +192,14 @@
       "date": "2026-04-24",
       "start": "10:00",
       "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "11:00",
+      "end": "12:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false

@@ -243,6 +243,32 @@
       "online": false
     }
   ],
+  "Muriel STERN": [
+    {
+      "date": "2026-04-20",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-27",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Naciba HERMEZ": [
     {
       "date": "2026-04-20",
@@ -270,46 +296,22 @@
     },
     {
       "date": "2026-04-21",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-04-21",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-04-22",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "ICO",
-      "name": "In-company",
-      "online": false
-    },
-    {
-      "date": "2026-04-22",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "In-company",
-      "online": false
-    },
-    {
-      "date": "2026-04-23",
-      "start": "16:00",
+      "start": "15:00",
       "end": "17:00",
-      "type": "VIP",
-      "name": "VIP Class",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     },
     {
-      "date": "2026-04-24",
+      "date": "2026-04-22",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
       "start": "13:00",
       "end": "14:00",
       "type": "ICO",
@@ -500,6 +502,14 @@
       "date": "2026-05-01",
       "start": "11:00",
       "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "11:00",
+      "end": "12:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -709,6 +719,32 @@
       "online": true
     }
   ],
+  "Naïma REY": [
+    {
+      "date": "2026-04-21",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Claire BOURBAN": [
     {
       "date": "2026-04-21",
@@ -811,21 +847,19 @@
       "online": false
     }
   ],
-  "Naïma REY": [
-    {
-      "date": "2026-04-23",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
   "Paul CRETTEX": [
     {
       "date": "2026-04-24",
       "start": "09:00",
       "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "17:00",
+      "end": "18:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
