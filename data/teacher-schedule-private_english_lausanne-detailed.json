@@ -34,6 +34,14 @@
     },
     {
       "date": "2026-04-24",
+      "start": "08:00",
+      "end": "08:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-24",
       "start": "10:00",
       "end": "11:00",
       "type": "VAD",
@@ -60,14 +68,6 @@
       "date": "2026-04-25",
       "start": "10:00",
       "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-25",
-      "start": "11:00",
-      "end": "12:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -762,6 +762,46 @@
       "end": "19:30",
       "type": "JGP",
       "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "12:15",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-22",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "10:00",
+      "end": "10:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-23",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-24",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     },
     {
