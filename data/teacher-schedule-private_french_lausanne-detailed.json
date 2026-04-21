@@ -283,6 +283,24 @@
       "online": true
     }
   ],
+  "Rachel BERGIN": [
+    {
+      "date": "2026-04-27",
+      "start": "14:45",
+      "end": "15:45",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-04-30",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    }
+  ],
   "Sofiane CHAOUCHE": [
     {
       "date": "2026-04-27",
