@@ -17,17 +17,17 @@
       "online": false
     },
     {
-      "date": "2026-04-27",
-      "start": "18:30",
-      "end": "19:30",
+      "date": "2026-04-30",
+      "start": "13:30",
+      "end": "14:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
     },
     {
       "date": "2026-04-30",
-      "start": "13:30",
-      "end": "14:30",
+      "start": "18:30",
+      "end": "19:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
