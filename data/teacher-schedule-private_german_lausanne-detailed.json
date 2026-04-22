@@ -253,6 +253,40 @@
       "online": false
     }
   ],
+  "Asita ARYAN MAIN": [
+    {
+      "date": "2026-04-27",
+      "start": "10:30",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-28",
+      "start": "09:30",
+      "end": "10:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-28",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-01",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Sandra AIT MAIN": [
     {
       "date": "2026-04-27",
@@ -311,24 +345,6 @@
       "online": false
     }
   ],
-  "Asita ARYAN MAIN": [
-    {
-      "date": "2026-04-28",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
   "Judit PESZLEN": [
     {
       "date": "2026-04-28",
@@ -340,6 +356,14 @@
     }
   ],
   "Johanna PACZULLA": [
+    {
+      "date": "2026-04-28",
+      "start": "16:15",
+      "end": "17:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
     {
       "date": "2026-05-01",
       "start": "13:15",
