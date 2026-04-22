@@ -425,6 +425,16 @@
       "online": false
     }
   ],
+  "Claire BOURBAN": [
+    {
+      "date": "2026-04-28",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Nicolas PETROVIC": [
     {
       "date": "2026-04-30",
