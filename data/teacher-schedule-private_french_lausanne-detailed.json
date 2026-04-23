@@ -151,6 +151,38 @@
       "online": false
     },
     {
+      "date": "2026-04-28",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-28",
+      "start": "15:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "In-company",
+      "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
       "date": "2026-05-01",
       "start": "16:00",
       "end": "17:00",
