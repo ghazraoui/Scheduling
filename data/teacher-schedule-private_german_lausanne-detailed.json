@@ -43,7 +43,7 @@
       "online": true
     },
     {
-      "date": "2026-04-27",
+      "date": "2026-04-28",
       "start": "09:00",
       "end": "10:00",
       "type": "VAD",
@@ -52,8 +52,8 @@
     },
     {
       "date": "2026-04-28",
-      "start": "09:00",
-      "end": "10:00",
+      "start": "10:00",
+      "end": "11:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -80,14 +80,6 @@
       "end": "18:15",
       "type": "JPR",
       "name": "Juniors Private",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VAD",
-      "name": "VIP Adults",
       "online": true
     },
     {
@@ -292,6 +284,32 @@
       "end": "12:30",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Nadja GODZINA MAIN": [
+    {
+      "date": "2026-04-27",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
       "online": false
     }
   ],
