@@ -332,6 +332,14 @@
     },
     {
       "date": "2026-04-28",
+      "start": "16:15",
+      "end": "17:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-28",
       "start": "18:15",
       "end": "19:15",
       "type": "VAD",
@@ -400,6 +408,104 @@
       "date": "2026-05-01",
       "start": "12:30",
       "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Karine BLATTER": [
+    {
+      "date": "2026-04-27",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-28",
+      "start": "09:00",
+      "end": "09:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-28",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-04-29",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-30",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-04-30",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-01",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-01",
+      "start": "11:00",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-02",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
+      "start": "08:30",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-06",
+      "start": "19:30",
+      "end": "20:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -477,56 +583,6 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
-    }
-  ],
-  "Karine BLATTER": [
-    {
-      "date": "2026-04-28",
-      "start": "09:00",
-      "end": "09:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-01",
-      "start": "11:00",
-      "end": "11:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-02",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "08:30",
-      "end": "09:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-06",
-      "start": "19:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
     }
   ],
   "Claire BOURBAN": [
