@@ -593,6 +593,14 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    },
+    {
+      "date": "2026-04-29",
+      "start": "09:15",
+      "end": "10:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Nicolas PETROVIC": [
