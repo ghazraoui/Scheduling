@@ -1,486 +1,4 @@
 {
-  "Simone TIETZ CR": [
-    {
-      "date": "2026-04-27",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VIP",
-      "name": "VIP Class",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "13:00",
-      "end": "13:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-27",
-      "start": "15:30",
-      "end": "16:30",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": true
-    }
-  ],
-  "Korinna ARING": [
-    {
-      "date": "2026-04-27",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "12:15",
-      "end": "13:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "13:15",
-      "end": "14:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "17:15",
-      "end": "18:15",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "13:15",
-      "end": "14:00",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": true
-    },
-    {
-      "date": "2026-04-29",
-      "start": "16:00",
-      "end": "17:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "14:45",
-      "end": "15:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-05",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-05",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Kerstin ESA WELLS MAIN": [
-    {
-      "date": "2026-04-27",
-      "start": "10:00",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-27",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-30",
-      "start": "09:00",
-      "end": "10:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-04-30",
-      "start": "10:30",
-      "end": "12:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-04-30",
-      "start": "13:00",
-      "end": "14:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "09:45",
-      "end": "11:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "10:00",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "09:00",
-      "end": "10:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "10:30",
-      "end": "12:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "13:00",
-      "end": "14:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "09:45",
-      "end": "11:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Nadja GODZINA MAIN": [
-    {
-      "date": "2026-04-27",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "15:00",
-      "end": "16:00",
-      "type": "JGP",
-      "name": "Juniors Group",
-      "online": false
-    }
-  ],
-  "Sandra AIT MAIN": [
-    {
-      "date": "2026-04-27",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-27",
-      "start": "17:30",
-      "end": "18:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": false
-    },
-    {
-      "date": "2026-04-30",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "10:30",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Asita ARYAN MAIN": [
-    {
-      "date": "2026-04-27",
-      "start": "17:30",
-      "end": "18:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-28",
-      "start": "09:30",
-      "end": "10:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-28",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-04-29",
-      "start": "15:30",
-      "end": "16:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "10:30",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Doreen LIEPERT": [
-    {
-      "date": "2026-04-27",
-      "start": "18:30",
-      "end": "19:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "10:30",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-28",
-      "start": "18:15",
-      "end": "19:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "18:15",
-      "end": "19:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-01",
-      "start": "15:30",
-      "end": "16:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Judit PESZLEN": [
-    {
-      "date": "2026-04-28",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-04-30",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Johanna PACZULLA": [
-    {
-      "date": "2026-04-28",
-      "start": "16:15",
-      "end": "17:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-01",
-      "start": "13:15",
-      "end": "14:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "13:15",
-      "end": "14:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
   "Kerstin ESA WEINMANN MAIN": [
     {
       "date": "2026-05-04",
@@ -533,6 +51,108 @@
     {
       "date": "2026-05-05",
       "start": "13:30",
+      "end": "14:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Kerstin ESA WELLS MAIN": [
+    {
+      "date": "2026-05-04",
+      "start": "10:00",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-04",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "09:00",
+      "end": "10:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "10:30",
+      "end": "12:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "13:00",
+      "end": "14:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-08",
+      "start": "09:45",
+      "end": "11:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-11",
+      "start": "10:00",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-11",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-15",
+      "start": "09:45",
+      "end": "11:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Korinna ARING": [
+    {
+      "date": "2026-05-05",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-05",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Johanna PACZULLA": [
+    {
+      "date": "2026-05-08",
+      "start": "13:15",
       "end": "14:15",
       "type": "VAD",
       "name": "VIP Adults",
