@@ -149,6 +149,16 @@
       "online": true
     }
   ],
+  "Asita ARYAN MAIN": [
+    {
+      "date": "2026-05-05",
+      "start": "10:30",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Johanna PACZULLA": [
     {
       "date": "2026-05-06",
