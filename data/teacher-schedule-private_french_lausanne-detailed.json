@@ -279,6 +279,24 @@
       "online": true
     }
   ],
+  "Claire BOURBAN": [
+    {
+      "date": "2026-05-05",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
+      "start": "09:15",
+      "end": "10:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Karine BLATTER": [
     {
       "date": "2026-05-06",
