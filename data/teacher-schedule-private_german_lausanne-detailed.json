@@ -159,6 +159,16 @@
       "online": false
     }
   ],
+  "Judit PESZLEN": [
+    {
+      "date": "2026-05-05",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
   "Johanna PACZULLA": [
     {
       "date": "2026-05-06",
