@@ -165,6 +165,22 @@
       "online": false
     },
     {
+      "date": "2026-05-07",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-08",
       "start": "11:30",
       "end": "12:30",
@@ -293,6 +309,16 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
+    }
+  ],
+  "Paul CRETTEX": [
+    {
+      "date": "2026-05-05",
+      "start": "17:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Claire BOURBAN": [
