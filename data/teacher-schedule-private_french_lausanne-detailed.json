@@ -133,6 +133,22 @@
       "online": false
     },
     {
+      "date": "2026-05-05",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-05",
+      "start": "15:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-06",
       "start": "12:00",
       "end": "13:00",
