@@ -1,9 +1,51 @@
 {
+  "Hussein ALI": [
+    {
+      "date": "2026-05-04",
+      "start": "08:30",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-04",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-08",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Mélanie QUINTIN": [
     {
       "date": "2026-05-04",
       "start": "09:00",
-      "end": "10:00",
+      "end": "11:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -35,7 +77,7 @@
     {
       "date": "2026-05-11",
       "start": "09:00",
-      "end": "10:00",
+      "end": "11:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -329,16 +371,6 @@
       "online": true
     }
   ],
-  "Paul CRETTEX": [
-    {
-      "date": "2026-05-05",
-      "start": "17:00",
-      "end": "19:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
   "Claire BOURBAN": [
     {
       "date": "2026-05-05",
@@ -430,6 +462,16 @@
       "date": "2026-05-15",
       "start": "10:30",
       "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Paul CRETTEX": [
+    {
+      "date": "2026-05-07",
+      "start": "17:30",
+      "end": "19:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
