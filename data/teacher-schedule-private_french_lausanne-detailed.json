@@ -311,6 +311,24 @@
       "online": true
     }
   ],
+  "Kenza AGUILAR": [
+    {
+      "date": "2026-05-04",
+      "start": "18:15",
+      "end": "19:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-07",
+      "start": "18:15",
+      "end": "19:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
   "Paul CRETTEX": [
     {
       "date": "2026-05-05",
