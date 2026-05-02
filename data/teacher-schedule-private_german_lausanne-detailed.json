@@ -60,14 +60,6 @@
   "Kerstin ESA WELLS MAIN": [
     {
       "date": "2026-05-04",
-      "start": "10:00",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
       "start": "11:30",
       "end": "12:30",
       "type": "VAD",
@@ -99,33 +91,9 @@
       "online": false
     },
     {
-      "date": "2026-05-08",
-      "start": "09:45",
-      "end": "11:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-11",
-      "start": "10:00",
-      "end": "11:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
       "date": "2026-05-11",
       "start": "11:30",
       "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-15",
-      "start": "09:45",
-      "end": "11:15",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
@@ -274,6 +242,22 @@
     },
     {
       "date": "2026-05-06",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
+      "start": "11:00",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-06",
       "start": "14:00",
       "end": "15:00",
       "type": "VAD",
@@ -284,6 +268,14 @@
       "date": "2026-05-06",
       "start": "15:30",
       "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "09:30",
+      "end": "10:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
