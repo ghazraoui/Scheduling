@@ -505,6 +505,38 @@
       "online": false
     },
     {
+      "date": "2026-05-06",
+      "start": "12:15",
+      "end": "13:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-07",
+      "start": "09:30",
+      "end": "10:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-08",
+      "start": "16:00",
+      "end": "16:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-08",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
       "date": "2026-05-09",
       "start": "09:00",
       "end": "10:00",
@@ -612,6 +644,14 @@
     },
     {
       "date": "2026-05-07",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-07",
       "start": "19:00",
       "end": "20:00",
       "type": "JPR",
@@ -630,6 +670,14 @@
       "date": "2026-05-08",
       "start": "10:00",
       "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-08",
+      "start": "17:00",
+      "end": "18:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
