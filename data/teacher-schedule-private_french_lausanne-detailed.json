@@ -10,14 +10,6 @@
     },
     {
       "date": "2026-05-11",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-11",
       "start": "12:00",
       "end": "12:45",
       "type": "VAD",
@@ -315,14 +307,6 @@
       "online": true
     },
     {
-      "date": "2026-05-16",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
       "date": "2026-05-20",
       "start": "19:30",
       "end": "20:30",
@@ -342,6 +326,16 @@
       "date": "2026-05-21",
       "start": "19:30",
       "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Séverine HERSANT": [
+    {
+      "date": "2026-05-13",
+      "start": "10:00",
+      "end": "10:45",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false

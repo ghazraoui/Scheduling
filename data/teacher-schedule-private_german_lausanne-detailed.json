@@ -225,6 +225,14 @@
   ],
   "Johanna PACZULLA": [
     {
+      "date": "2026-05-12",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-13",
       "start": "11:00",
       "end": "12:00",
@@ -319,6 +327,24 @@
       "type": "JGP",
       "name": "Juniors Group",
       "online": false
+    }
+  ],
+  "Judit PESZLEN": [
+    {
+      "date": "2026-05-12",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-19",
+      "start": "09:30",
+      "end": "10:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Asita ARYAN MAIN": [
@@ -329,16 +355,6 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
-    }
-  ],
-  "Judit PESZLEN": [
-    {
-      "date": "2026-05-19",
-      "start": "09:30",
-      "end": "10:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
     }
   ],
   "Sandra AIT MAIN": [
