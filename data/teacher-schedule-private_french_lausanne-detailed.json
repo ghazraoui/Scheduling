@@ -1,49 +1,7 @@
 {
-  "Hussein ALI": [
-    {
-      "date": "2026-05-04",
-      "start": "08:30",
-      "end": "09:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "17:45",
-      "end": "18:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "17:45",
-      "end": "18:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
   "Mélanie QUINTIN": [
     {
-      "date": "2026-05-04",
+      "date": "2026-05-11",
       "start": "09:00",
       "end": "11:00",
       "type": "VAD",
@@ -51,7 +9,7 @@
       "online": false
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-05-11",
       "start": "11:00",
       "end": "12:00",
       "type": "VAD",
@@ -59,7 +17,7 @@
       "online": false
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-05-11",
       "start": "12:00",
       "end": "12:45",
       "type": "VAD",
@@ -67,71 +25,39 @@
       "online": false
     },
     {
-      "date": "2026-05-07",
+      "date": "2026-05-18",
+      "start": "09:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-18",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-18",
+      "start": "12:00",
+      "end": "12:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
       "start": "13:30",
       "end": "14:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-11",
-      "start": "09:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-11",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-11",
-      "start": "12:00",
-      "end": "12:45",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
     }
   ],
   "Muriel STERN": [
-    {
-      "date": "2026-05-04",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "16:00",
-      "end": "17:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "16:00",
-      "end": "17:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
     {
       "date": "2026-05-11",
       "start": "10:00",
@@ -151,102 +77,6 @@
   ],
   "Naciba HERMEZ": [
     {
-      "date": "2026-05-04",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "12:30",
-      "end": "13:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "18:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "15:00",
-      "end": "17:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "12:00",
-      "end": "13:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "12:30",
-      "end": "13:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "11:30",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "16:00",
-      "end": "17:00",
-      "type": "VIP",
-      "name": "VIP Class",
-      "online": false
-    },
-    {
-      "date": "2026-05-08",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
       "date": "2026-05-11",
       "start": "11:30",
       "end": "12:30",
@@ -269,49 +99,33 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
-    }
-  ],
-  "Samuel FRANCOIS": [
+    },
     {
-      "date": "2026-05-04",
+      "date": "2026-05-21",
       "start": "12:00",
       "end": "13:00",
       "type": "ICO",
       "name": "Out Centre",
-      "online": true
+      "online": false
     },
     {
-      "date": "2026-05-05",
-      "start": "09:30",
-      "end": "10:30",
+      "date": "2026-05-22",
+      "start": "11:30",
+      "end": "12:30",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": true
+      "online": false
     },
     {
-      "date": "2026-05-05",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
+      "date": "2026-05-23",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": false
+    }
+  ],
+  "Samuel FRANCOIS": [
     {
       "date": "2026-05-11",
       "start": "12:00",
@@ -343,302 +157,46 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
-    }
-  ],
-  "Ina TOSCA": [
-    {
-      "date": "2026-05-04",
-      "start": "13:30",
-      "end": "14:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
     },
     {
-      "date": "2026-05-04",
-      "start": "14:30",
-      "end": "15:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "17:00",
-      "end": "18:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-04",
-      "start": "19:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "08:45",
-      "end": "09:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "09:45",
-      "end": "10:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "14:00",
-      "end": "16:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-05",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "08:45",
-      "end": "09:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "09:45",
-      "end": "10:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "10:45",
-      "end": "11:45",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-07",
-      "start": "12:15",
-      "end": "13:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Morgan DALIN": [
-    {
-      "date": "2026-05-04",
-      "start": "16:00",
-      "end": "17:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-05",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-05",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-06",
-      "start": "11:00",
-      "end": "12:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "13:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-08",
-      "start": "16:00",
-      "end": "17:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Kenza AGUILAR": [
-    {
-      "date": "2026-05-04",
-      "start": "18:15",
-      "end": "19:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-07",
-      "start": "18:15",
-      "end": "19:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Claire BOURBAN": [
-    {
-      "date": "2026-05-05",
-      "start": "19:00",
-      "end": "20:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-06",
-      "start": "09:15",
-      "end": "10:15",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Karine BLATTER": [
-    {
-      "date": "2026-05-06",
-      "start": "08:30",
-      "end": "09:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-06",
-      "start": "19:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-13",
-      "start": "08:30",
-      "end": "09:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-16",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Carole FLANQUART": [
-    {
-      "date": "2026-05-06",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-13",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    }
-  ],
-  "Nicolas PETROVIC": [
-    {
-      "date": "2026-05-07",
+      "date": "2026-05-18",
       "start": "12:00",
-      "end": "14:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
     },
     {
-      "date": "2026-05-15",
-      "start": "10:30",
-      "end": "11:30",
+      "date": "2026-05-19",
+      "start": "09:30",
+      "end": "10:30",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Paul CRETTEX": [
+      "online": true
+    },
     {
-      "date": "2026-05-07",
-      "start": "17:30",
-      "end": "19:30",
+      "date": "2026-05-19",
+      "start": "14:00",
+      "end": "15:00",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": false
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Sofiane CHAOUCHE": [
@@ -681,6 +239,232 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-19",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Karine BLATTER": [
+    {
+      "date": "2026-05-13",
+      "start": "08:30",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-16",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Carole FLANQUART": [
+    {
+      "date": "2026-05-13",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
+  "Nicolas PETROVIC": [
+    {
+      "date": "2026-05-15",
+      "start": "10:30",
+      "end": "11:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Rachel BERGIN": [
+    {
+      "date": "2026-05-19",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "16:00",
+      "end": "16:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "11:00",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "15:00",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "18:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Paul CRETTEX": [
+    {
+      "date": "2026-05-20",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ]
 }
