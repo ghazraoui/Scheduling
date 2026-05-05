@@ -357,24 +357,22 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
-    }
-  ],
-  "Carole FLANQUART": [
-    {
-      "date": "2026-05-13",
-      "start": "18:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
     },
     {
-      "date": "2026-05-20",
-      "start": "18:30",
-      "end": "19:30",
+      "date": "2026-05-14",
+      "start": "13:00",
+      "end": "14:00",
       "type": "VAD",
       "name": "VIP Adults",
-      "online": true
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Nicolas PETROVIC": [
@@ -493,6 +491,16 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    }
+  ],
+  "Carole FLANQUART": [
+    {
+      "date": "2026-05-20",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ]
 }
