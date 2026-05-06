@@ -241,6 +241,32 @@
       "online": true
     }
   ],
+  "Claire BOURBAN": [
+    {
+      "date": "2026-05-11",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-12",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-13",
+      "start": "09:15",
+      "end": "10:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Sofiane CHAOUCHE": [
     {
       "date": "2026-05-12",
@@ -360,6 +386,14 @@
       "date": "2026-05-20",
       "start": "19:30",
       "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "11:00",
+      "end": "12:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
