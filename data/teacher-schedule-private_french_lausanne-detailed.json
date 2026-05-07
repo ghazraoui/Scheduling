@@ -441,6 +441,40 @@
       "online": false
     }
   ],
+  "Paul CRETTEX": [
+    {
+      "date": "2026-05-13",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "08:30",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "15:45",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "17:00",
+      "end": "18:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Nicolas PETROVIC": [
     {
       "date": "2026-05-15",
@@ -520,40 +554,6 @@
       "date": "2026-05-22",
       "start": "12:30",
       "end": "13:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Paul CRETTEX": [
-    {
-      "date": "2026-05-20",
-      "start": "17:30",
-      "end": "19:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-22",
-      "start": "08:30",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-22",
-      "start": "15:45",
-      "end": "16:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-22",
-      "start": "17:00",
-      "end": "18:30",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
