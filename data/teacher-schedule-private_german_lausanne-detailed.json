@@ -10,10 +10,10 @@
     },
     {
       "date": "2026-05-11",
-      "start": "09:00",
-      "end": "10:00",
-      "type": "VAD",
-      "name": "VIP Adults",
+      "start": "18:30",
+      "end": "19:30",
+      "type": "ICO",
+      "name": "In-company",
       "online": true
     },
     {
@@ -54,14 +54,6 @@
       "end": "18:30",
       "type": "JPR",
       "name": "Juniors Private",
-      "online": true
-    },
-    {
-      "date": "2026-05-13",
-      "start": "08:00",
-      "end": "09:00",
-      "type": "VAD",
-      "name": "VIP Adults",
       "online": true
     },
     {
@@ -200,6 +192,22 @@
     },
     {
       "date": "2026-05-13",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
       "start": "15:00",
       "end": "16:00",
       "type": "JGP",
@@ -463,17 +471,23 @@
       "online": true
     }
   ],
-  "Christopher DRAPATZ": [
+  "Asita ARYAN MAIN": [
     {
       "date": "2026-05-13",
-      "start": "14:00",
-      "end": "15:00",
-      "type": "JGP",
-      "name": "Juniors Group",
+      "start": "09:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
-    }
-  ],
-  "Asita ARYAN MAIN": [
+    },
+    {
+      "date": "2026-05-13",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
     {
       "date": "2026-05-13",
       "start": "15:30",
@@ -499,11 +513,45 @@
       "online": false
     },
     {
+      "date": "2026-05-15",
+      "start": "15:00",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-18",
       "start": "18:00",
       "end": "19:00",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "15:30",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "18:15",
+      "end": "19:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Christopher DRAPATZ": [
+    {
+      "date": "2026-05-13",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
       "online": false
     }
   ]

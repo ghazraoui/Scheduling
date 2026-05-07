@@ -267,6 +267,88 @@
       "online": false
     }
   ],
+  "Karine BLATTER": [
+    {
+      "date": "2026-05-11",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-12",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-13",
+      "start": "08:30",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-13",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-13",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-15",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-21",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Sofiane CHAOUCHE": [
     {
       "date": "2026-05-12",
@@ -371,48 +453,6 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
-    }
-  ],
-  "Karine BLATTER": [
-    {
-      "date": "2026-05-13",
-      "start": "08:30",
-      "end": "09:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-20",
-      "start": "19:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-21",
-      "start": "11:00",
-      "end": "12:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    },
-    {
-      "date": "2026-05-21",
-      "start": "16:30",
-      "end": "17:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": true
-    },
-    {
-      "date": "2026-05-21",
-      "start": "19:30",
-      "end": "20:30",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
     }
   ],
   "Séverine HERSANT": [
