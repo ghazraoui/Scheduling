@@ -1,4 +1,46 @@
 {
+  "Hussein ALI": [
+    {
+      "date": "2026-05-11",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-11",
+      "start": "18:15",
+      "end": "19:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-13",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-13",
+      "start": "17:45",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-15",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Mélanie QUINTIN": [
     {
       "date": "2026-05-11",
@@ -80,14 +122,6 @@
       "end": "17:30",
       "type": "ICO",
       "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-14",
-      "start": "10:00",
-      "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
       "online": false
     }
   ],
