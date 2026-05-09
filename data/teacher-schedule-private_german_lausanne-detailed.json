@@ -519,6 +519,14 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Asita ARYAN MAIN": [
