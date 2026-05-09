@@ -479,6 +479,48 @@
       "online": true
     }
   ],
+  "Doreen LIEPERT": [
+    {
+      "date": "2026-05-11",
+      "start": "18:00",
+      "end": "18:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-11",
+      "start": "18:45",
+      "end": "19:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-12",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-12",
+      "start": "17:30",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
   "Asita ARYAN MAIN": [
     {
       "date": "2026-05-13",

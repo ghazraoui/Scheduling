@@ -251,7 +251,7 @@
       "start": "12:00",
       "end": "13:00",
       "type": "ICO",
-      "name": "Out Centre",
+      "name": "In-company",
       "online": false
     },
     {
@@ -267,7 +267,7 @@
       "start": "16:00",
       "end": "17:00",
       "type": "VIP",
-      "name": "VIP Class",
+      "name": "VIP Course",
       "online": false
     }
   ],
