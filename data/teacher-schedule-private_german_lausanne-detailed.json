@@ -323,6 +323,14 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
     }
   ],
   "Johanna PACZULLA": [

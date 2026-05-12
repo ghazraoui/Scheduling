@@ -581,6 +581,14 @@
       "online": true
     },
     {
+      "date": "2026-05-27",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
       "date": "2026-05-29",
       "start": "15:00",
       "end": "16:00",
