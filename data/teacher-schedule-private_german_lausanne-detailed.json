@@ -167,6 +167,216 @@
       "online": false
     }
   ],
+  "Simone TIETZ CR": [
+    {
+      "date": "2026-05-18",
+      "start": "13:00",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-18",
+      "start": "15:30",
+      "end": "16:30",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-05-19",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-19",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-19",
+      "start": "19:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "13:00",
+      "end": "13:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-20",
+      "start": "19:00",
+      "end": "20:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-22",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-22",
+      "start": "13:00",
+      "end": "13:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-22",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-22",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-05-25",
+      "start": "15:30",
+      "end": "16:30",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": true
+    },
+    {
+      "date": "2026-05-26",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-27",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-27",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-27",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-27",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-28",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": true
+    },
+    {
+      "date": "2026-05-29",
+      "start": "08:30",
+      "end": "09:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-29",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
   "Sandra AIT MAIN": [
     {
       "date": "2026-05-18",
