@@ -541,6 +541,14 @@
       "online": false
     },
     {
+      "date": "2026-05-22",
+      "start": "15:30",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-27",
       "start": "09:30",
       "end": "10:30",
@@ -593,6 +601,14 @@
   ],
   "Johanna PACZULLA": [
     {
+      "date": "2026-05-19",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-20",
       "start": "11:00",
       "end": "12:00",
@@ -606,6 +622,14 @@
       "end": "15:00",
       "type": "JGP",
       "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "13:15",
+      "end": "14:15",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     },
     {
