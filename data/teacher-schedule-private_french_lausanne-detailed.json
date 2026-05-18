@@ -2,6 +2,14 @@
   "Samuel FRANCOIS": [
     {
       "date": "2026-05-25",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-25",
       "start": "12:00",
       "end": "13:00",
       "type": "ICO",
@@ -25,6 +33,14 @@
       "online": true
     },
     {
+      "date": "2026-05-27",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
       "date": "2026-05-28",
       "start": "09:00",
       "end": "10:00",
@@ -36,6 +52,14 @@
       "date": "2026-05-28",
       "start": "11:00",
       "end": "12:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-06-01",
+      "start": "09:00",
+      "end": "10:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
@@ -60,6 +84,14 @@
       "date": "2026-06-02",
       "start": "14:00",
       "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-06-03",
+      "start": "09:00",
+      "end": "10:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
