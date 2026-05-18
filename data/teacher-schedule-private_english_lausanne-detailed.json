@@ -259,6 +259,48 @@
       "online": false
     }
   ],
+  "Melissa GHERARDI": [
+    {
+      "date": "2026-05-18",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-19",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-19",
+      "start": "18:45",
+      "end": "19:45",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": true
+    },
+    {
+      "date": "2026-05-21",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Emily VIP/TP TAYLOR": [
     {
       "date": "2026-05-18",
@@ -371,6 +413,22 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-05",
+      "start": "10:45",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Sharon GARY": [
@@ -431,6 +489,14 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Claire PRENDERGAST": [
@@ -459,14 +525,6 @@
       "online": false
     },
     {
-      "date": "2026-05-19",
-      "start": "17:00",
-      "end": "17:45",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": false
-    },
-    {
       "date": "2026-05-20",
       "start": "10:00",
       "end": "11:00",
@@ -523,14 +581,6 @@
       "online": false
     },
     {
-      "date": "2026-05-26",
-      "start": "17:00",
-      "end": "17:45",
-      "type": "JPR",
-      "name": "Juniors Private",
-      "online": false
-    },
-    {
       "date": "2026-05-27",
       "start": "10:00",
       "end": "11:00",
@@ -560,6 +610,46 @@
       "end": "17:00",
       "type": "JGP",
       "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "09:00",
+      "end": "10:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "10:30",
+      "end": "12:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "12:30",
+      "end": "14:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "13:00",
+      "end": "14:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "14:00",
+      "end": "15:30",
+      "type": "JPR",
+      "name": "Juniors Private",
       "online": false
     }
   ],
@@ -631,6 +721,32 @@
       "online": false
     }
   ],
+  "Naasira KHAN": [
+    {
+      "date": "2026-05-19",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-05-20",
+      "start": "15:45",
+      "end": "16:45",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-05-22",
+      "start": "10:45",
+      "end": "11:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Jamie RITZO": [
     {
       "date": "2026-05-19",
@@ -679,6 +795,30 @@
       "type": "JGP",
       "name": "Juniors Group",
       "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "18:00",
+      "end": "19:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
     }
   ],
   "Kristen KEISER": [
@@ -721,6 +861,22 @@
       "type": "JGP",
       "name": "Juniors Group",
       "online": false
+    },
+    {
+      "date": "2026-06-05",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "JPR",
+      "name": "Juniors Private",
+      "online": false
+    },
+    {
+      "date": "2026-06-06",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
     }
   ],
   "Madeline BROWN": [
@@ -758,6 +914,46 @@
     },
     {
       "date": "2026-05-30",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "15:00",
+      "end": "16:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-06",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-06",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "JGP",
+      "name": "Juniors Group",
+      "online": false
+    },
+    {
+      "date": "2026-06-06",
       "start": "11:00",
       "end": "12:00",
       "type": "JGP",
