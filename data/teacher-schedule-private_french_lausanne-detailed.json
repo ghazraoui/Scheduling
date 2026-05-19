@@ -116,6 +116,14 @@
   "Sofiane CHAOUCHE": [
     {
       "date": "2026-05-25",
+      "start": "16:30",
+      "end": "17:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-05-25",
       "start": "17:30",
       "end": "18:30",
       "type": "VAD",
@@ -241,6 +249,82 @@
       "type": "VAD",
       "name": "VIP Adults",
       "online": true
+    }
+  ],
+  "Rachel BERGIN": [
+    {
+      "date": "2026-05-26",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-27",
+      "start": "10:00",
+      "end": "10:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-27",
+      "start": "16:00",
+      "end": "16:45",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "15:00",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "18:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-29",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
+  "Naciba HERMEZ": [
+    {
+      "date": "2026-05-26",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-01",
+      "start": "12:30",
+      "end": "13:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
     }
   ],
   "Karine BLATTER": [
