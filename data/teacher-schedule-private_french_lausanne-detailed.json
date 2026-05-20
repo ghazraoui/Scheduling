@@ -351,11 +351,83 @@
       "online": false
     },
     {
+      "date": "2026-05-26",
+      "start": "15:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-27",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "11:30",
+      "end": "12:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-29",
+      "start": "15:30",
+      "end": "17:30",
+      "type": "VIP",
+      "name": "VIP Class",
+      "online": false
+    },
+    {
       "date": "2026-06-01",
       "start": "12:30",
       "end": "13:30",
       "type": "VAD",
       "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-01",
+      "start": "18:30",
+      "end": "20:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "14:00",
+      "end": "15:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-02",
+      "start": "15:00",
+      "end": "17:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-06-05",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "VIP",
+      "name": "VIP Course",
       "online": false
     }
   ],
