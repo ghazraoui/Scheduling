@@ -263,6 +263,14 @@
       "online": false
     },
     {
+      "date": "2026-05-27",
+      "start": "15:30",
+      "end": "16:30",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
       "date": "2026-05-29",
       "start": "09:30",
       "end": "10:30",
@@ -474,6 +482,40 @@
       "end": "14:30",
       "type": "ICO",
       "name": "Out Centre",
+      "online": false
+    }
+  ],
+  "Samuel PREUSS": [
+    {
+      "date": "2026-05-28",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "16:30",
+      "end": "17:15",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-04",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-06-04",
+      "start": "16:30",
+      "end": "17:15",
+      "type": "VAD",
+      "name": "VIP Adults",
       "online": false
     }
   ]
