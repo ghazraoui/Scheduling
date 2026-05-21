@@ -325,6 +325,56 @@
       "online": false
     }
   ],
+  "Muriel STERN": [
+    {
+      "date": "2026-05-26",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-05-26",
+      "start": "16:00",
+      "end": "17:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-27",
+      "start": "16:00",
+      "end": "17:30",
+      "type": "ICO",
+      "name": "Out Centre",
+      "online": false
+    },
+    {
+      "date": "2026-05-28",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-01",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    },
+    {
+      "date": "2026-06-03",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": false
+    }
+  ],
   "Naciba HERMEZ": [
     {
       "date": "2026-05-26",
@@ -524,32 +574,6 @@
       "date": "2026-06-05",
       "start": "10:00",
       "end": "11:00",
-      "type": "VAD",
-      "name": "VIP Adults",
-      "online": false
-    }
-  ],
-  "Muriel STERN": [
-    {
-      "date": "2026-05-26",
-      "start": "16:00",
-      "end": "17:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-27",
-      "start": "16:00",
-      "end": "17:30",
-      "type": "ICO",
-      "name": "Out Centre",
-      "online": false
-    },
-    {
-      "date": "2026-05-28",
-      "start": "16:00",
-      "end": "17:00",
       "type": "VAD",
       "name": "VIP Adults",
       "online": false

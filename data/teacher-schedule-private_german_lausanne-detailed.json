@@ -419,6 +419,24 @@
       "online": false
     }
   ],
+  "Maren VON KüHNE": [
+    {
+      "date": "2026-05-28",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    },
+    {
+      "date": "2026-06-04",
+      "start": "08:00",
+      "end": "09:00",
+      "type": "VAD",
+      "name": "VIP Adults",
+      "online": true
+    }
+  ],
   "Kerstin ESA WELLS MAIN": [
     {
       "date": "2026-05-28",
